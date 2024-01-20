@@ -3,7 +3,22 @@
   padding: 0;
   box-sizing: border-box; }
 
-body {
+h1, h2, h3 {
+  font-size: 3.125rem;
+  color: black;
+  font-weight: bold; }
+
+h2 {
+  font-size: 2.1875rem;
+  text-align: center;
+  padding: 30px; }
+
+h3 {
+  font-size: 1.875rem;
+  text-align: center;
+  padding: 15px 15px 15px 0px; }
+
+.grid-container-planes {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 80px 450px 400px 700px 250px;
@@ -11,12 +26,29 @@ body {
   align-content: none;
   grid-template-areas: "header header header " "presentacion-planes presentacion-planes presentacion-planes" "intro-planes intro-planes img-planes" "detalle-planes detalle-planes  detalle-planes " "footer footer footer "; }
 
+.grid-container-index {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 80px 450px 400px 700px 250px;
+  justify-content: none;
+  align-content: none;
+  grid-template-areas: "header header header " "presentacion presentacion presentacion" "contenedor-servicios contenedor-servicios contenedor-servicios" "contenedor-adopciones contenedor-adopciones  contenedor-adopciones" "footer footer footer "; }
+  .grid-container-index main .presentacion {
+    background-image: url("../../assets/cocker.jpg");
+    grid-area: presentacion;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+    gap: none; }
+
 header {
   grid-area: header; }
-  header h1 {
-    font-size: 2.5rem; }
   header .navbar {
     background-color: #9FBB73;
+    display: flex;
     align-items: center; }
     header .navbar .logo-nav img {
       width: 90px;
@@ -28,16 +60,18 @@ header {
       color: white;
       padding: 30px 250px 30px 0px; }
     header .navbar ul {
+      display: flex;
       gap: 5.625rem;
       margin: 1.25rem 0px;
-      padding-right: 60px; }
-      header .navbar ul li {
-        list-style: none; }
-        header .navbar ul li a {
-          text-decoration: none;
-          color: black; }
-          header .navbar ul li a:hover {
-            color: white; }
+      padding-right: 60px;
+      list-style: none; }
+      header .navbar ul li a {
+        text-decoration: none;
+        color: black;
+        font-size: 1.5625rem;
+        font-weight: bold; }
+        header .navbar ul li a:hover {
+          color: white; }
 
 footer {
   background-color: #F3B664;

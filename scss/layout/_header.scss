@@ -1,10 +1,9 @@
 header{ 
-    grid-area: header;   
-    h1{
-        font-size: map-get($font-size, lg);
-    }
+    grid-area: header;  
+    
     .navbar{
         background-color: $navbarColor;
+        display: flex;    
         align-items: center;
         .logo-nav {
             img{
@@ -16,23 +15,64 @@ header{
             display: flex;
             font-size: 2.1875rem;
             font-weight: bold;
-            color:$whiteColor;  
+            color: $whiteColor;  
             padding: 30px 250px 30px 0px;
         }
         ul{
+            display: flex;
             gap: 5.625rem;
             margin: 1.25rem 0px;            
             padding-right: 60px; 
-            li{
-                list-style: none;
+            list-style: none;
+            li{                
                 a{
                     text-decoration: none;
                     color: $blackColor;
-                    &:hover{
+                    font-size: 1.5625rem;
+                    font-weight: bold;   
+                        &:hover{
                         color: $whiteColor;
-                    }
+                        }
                 }
             }
         }
     }
+
+
+
+    // .navbar{
+    //     background-color: $navbarColor;
+    //     align-items: center;
+    //     .logo-nav {
+    //         img{
+    //             width: 90px;
+    //             margin-left: 20px;  
+    //         }
+    //     }
+    //     .pow {
+    //         display: flex;
+    //         font-size: 2.1875rem;
+    //         font-weight: bold;
+    //         color:$whiteColor;  
+    //         padding: 30px 250px 30px 0px;
+    //     }
+    //     ul{
+    //         display: flex;
+    //         gap: 5.625rem;
+    //         margin: 1.25rem 0px;            
+    //         padding-right: 60px; 
+    //         list-style: none;
+    //         li{                
+    //             a{
+    //                 text-decoration: none;
+    //                 color: $blackColor;
+    //                 font-size: 1.5625rem;
+    //                 font-weight: bold;    
+    //                     &:hover{
+    //                        color: $whiteColor;
+    //                     }
+    //             }
+    //         }
+    //     }
+    // }
 }
