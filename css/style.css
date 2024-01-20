@@ -18,6 +18,50 @@ h3 {
   text-align: center;
   padding: 15px 15px 15px 0px; }
 
+.grid-container-servicios {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 80px 450px 400px 700px 250px;
+  justify-content: none;
+  align-content: none;
+  grid-template-areas: "header header header " "presentacion-servicios presentacion-servicios presentacion-servicios" "intro-servicios intro-servicios img-servicios" "detalle-servicios detalle-servicios  detalle-servicios " "footer footer footer "; }
+  .grid-container-servicios .presentacion-servicios {
+    background-image: url("../../assets/dog-grass-sky.jpg");
+    grid-area: presentacion-servicios;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+    gap: none; }
+    .grid-container-servicios .presentacion-servicios .textos-presentacion {
+      display: flex;
+      flex-direction: column;
+      justify-content: none;
+      align-items: center;
+      gap: none;
+      margin-right: 80px; }
+  .grid-container-servicios .intro-servicios {
+    background-color: #F4DFB6;
+    grid-area: intro-servicios;
+    align-items: center;
+    justify-items: center; }
+  .grid-container-servicios .img-servicios {
+    width: 100%;
+    height: 100%;
+    grid-area: img-servicios; }
+    .grid-container-servicios .img-servicios img {
+      width: 100%;
+      height: 100%; }
+  .grid-container-servicios .detalle-servicios {
+    background-color: #EC8F5E;
+    grid-area: detalle-servicios;
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-evenly; }
+
 .grid-container-planes {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -27,13 +71,14 @@ h3 {
   grid-template-areas: "header header header " "presentacion-planes presentacion-planes presentacion-planes" "intro-planes intro-planes img-planes" "detalle-planes detalle-planes  detalle-planes " "footer footer footer "; }
 
 .grid-container-index {
+  width: 100%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 80px 450px 400px 700px 250px;
   justify-content: none;
   align-content: none;
-  grid-template-areas: "header header header " "presentacion presentacion presentacion" "contenedor-servicios contenedor-servicios contenedor-servicios" "contenedor-adopciones contenedor-adopciones  contenedor-adopciones" "footer footer footer "; }
-  .grid-container-index main .presentacion {
+  grid-template-areas: "header header header" "presentacion presentacion presentacion" "contenedor-servicios contenedor-servicios contenedor-servicios" "contenedor-adopciones contenedor-adopciones  contenedor-adopciones" "footer footer footer "; }
+  .grid-container-index .presentacion {
     background-image: url("../../assets/cocker.jpg");
     grid-area: presentacion;
     background-size: cover;
@@ -43,6 +88,17 @@ h3 {
     justify-content: center;
     align-items: end;
     gap: none; }
+    .grid-container-index .presentacion .textos-presentacion {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-right: 80px; }
+    .grid-container-index .presentacion .parrafo-presentacion {
+      font-size: 1.875rem; }
+  .grid-container-index .contenedor-servicios {
+    grid-area: contenedor-servicios;
+    background-color: #F3B664;
+    align-items: center; }
 
 header {
   grid-area: header; }
@@ -92,34 +148,57 @@ footer {
     footer .brand-footer .pow {
       padding: 0px;
       margin: 0px; }
-    footer .brand-footer div .info-contacto {
+  footer .bloque-info-contacto .info-contacto {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    gap: none; }
+    footer .bloque-info-contacto .info-contacto .info {
+      font-size: 20px;
+      font-weight: bold;
+      padding-top: 15px;
+      padding-left: 10px; }
+    footer .bloque-info-contacto .info-contacto .item-info {
+      width: 25px;
+      height: 25px; }
+  footer .bloque-redes {
+    justify-content: center;
+    align-items: center; }
+    footer .bloque-redes .seguinos {
+      text-align: center;
+      font-size: 30px;
+      color: white; }
+    footer .bloque-redes .redes {
       display: flex;
       flex-direction: row;
-      justify-content: left;
+      justify-content: space-evenly;
       align-items: center;
-      gap: none; }
-      footer .brand-footer div .info-contacto .item-info {
-        width: 25px;
-        height: 25px; }
-      footer .brand-footer div .info-contacto .info {
-        font-size: 20px;
-        font-weight: bold;
-        padding-top: 15px;
-        padding-left: 10px; }
-    footer .brand-footer .bloque-redes {
-      justify-content: center;
-      align-items: center; }
-      footer .brand-footer .bloque-redes .seguinos {
-        text-align: center;
-        font-size: 30px;
-        color: white; }
-      footer .brand-footer .bloque-redes .redes {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        align-items: center;
-        gap: none;
-        justify-items: center; }
-        footer .brand-footer .bloque-redes .redes div .item-redes {
-          width: 50px;
-          height: 50px; }
+      gap: none;
+      justify-items: center; }
+      footer .bloque-redes .redes .item-redes {
+        width: 50px;
+        height: 50px; }
+
+.contenedor-servicios .contenedor-cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: none;
+  gap: none; }
+  .contenedor-servicios .contenedor-cards .card {
+    width: 350px;
+    height: 425px;
+    background-color: #F4DFB6;
+    text-align: center;
+    border: 1px solid rgba(0, 0, 0, 0.278);
+    border-radius: 1.25rem;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: none;
+    align-items: center;
+    gap: none; }
+    .contenedor-servicios .contenedor-cards .card .img-card {
+      width: 300px;
+      padding: 5px 0px 35px 0px; }

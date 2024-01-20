@@ -2,51 +2,95 @@ footer{
     background-color: $footerColor;
     grid-area: footer;
     @include flex(row,space-around,center, none);
-    .brand-footer {
+       .brand-footer {
         @include flex(row,none,center, none);
-        .logo-footer {  
-                width: 120px;               
-        }
-        .pow {
-            padding: 0px;
-            margin: 0px;
-        }
-        div {
-            .info-contacto{ 
-                @include flex(row,left,center, none);  
+             .logo-footer {  
+                   width: 120px;            
+              }
+              .pow {
+                padding: 0px;
+                margin: 0px;
+              }      
+       }
+       .bloque-info-contacto{
+          .info-contacto{  
+            @include flex(row,left,center, none); 
+               .info {
+                font-size: 20px;
+                font-weight: bold;
+                padding-top: 15px;
+                padding-left: 10px;
+                }                
                 .item-info{
-                    width: 25px;
-                    height: 25px;
-                    } 
-                .info {
-                    font-size: 20px;
-                    font-weight: bold;
-                    padding-top: 15px;
-                    padding-left: 10px;
-                }        
-            }
+                width: 25px;
+                height: 25px;
+                }
+            
+           }   
         }
-        .bloque-redes {    
+        .bloque-redes {   
             justify-content: center;   
-            align-items: center;
+            align-items: center; 
             .seguinos {
                 text-align: center;
                 font-size: 30px;
-                color:$whiteColor;
-                }
+                color: white;
+            } 
             .redes{
-                @include flex(row,space-evenly,center, none);                    
-                justify-items: center;  
-                div{
-                    .item-redes {
-                        width: 50px;
-                        height: 50px;
-                    }
-                }                  
-            }
-        }        
+                @include flex(row,space-evenly,center, none); 
+                justify-items: center;   
+                    .item-redes{
+                       width: 50px;
+                       height: 50px;
+                     }         
+                }
+                
+        } 
+    // .brand-footer {
+    //     @include flex(row,none,center, none);
+    //     .logo-footer {  
+    //             width: 120px;               
+    //     }
+    //     .pow {
+    //         padding: 0px;
+    //         margin: 0px;
+    //     }
+    //     div {
+    //         .info-contacto{ 
+    //             @include flex(row,left,center, none);  
+    //             .item-info{
+    //                 width: 25px;
+    //                 height: 25px;
+    //                 } 
+    //             .info {
+    //                 font-size: 20px;
+    //                 font-weight: bold;
+    //                 padding-top: 15px;
+    //                 padding-left: 10px;
+    //             }        
+    //         }
+    //     }
+    //     .bloque-redes {    
+    //         justify-content: center;   
+    //         align-items: center;
+    //         .seguinos {
+    //             text-align: center;
+    //             font-size: 30px;
+    //             color:$whiteColor;
+    //             }
+    //         .redes{
+    //             @include flex(row,space-evenly,center, none);                    
+    //             justify-items: center;  
+    //             div{
+    //                 .item-redes {
+    //                     width: 50px;
+    //                     height: 50px;
+    //                 }
+    //             }                  
+    //         }
+    //     }        
         
-    }
+    // }
 
    
 }

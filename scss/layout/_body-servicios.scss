@@ -1,0 +1,46 @@
+.grid-container-servicios {
+    @include grid(repeat(3, 1fr), 80px 450px 400px 700px  250px , none, none,  
+        "header header header "
+        "presentacion-servicios presentacion-servicios presentacion-servicios"
+        "intro-servicios intro-servicios img-servicios"
+        "detalle-servicios detalle-servicios  detalle-servicios "
+        "footer footer footer ");
+
+        .presentacion-servicios {
+            background-image: url("../../assets/dog-grass-sky.jpg") ;
+            grid-area: presentacion-servicios ;
+            background-size:cover;
+            background-repeat: no-repeat;
+            @include flex(column,center,end, none);   
+                  .textos-presentacion {
+                        @include flex(column,none,center, none);                  
+                        margin-right: 80px;
+                    }
+            
+        }
+        .intro-servicios {
+            background-color: map-get($colors, fondoCrema); 
+            grid-area: intro-servicios ;
+            align-items: center;
+            justify-items: center;
+        }
+        .img-servicios {
+            width: 100%;
+            height: 100%;   
+            grid-area:img-servicios ;
+                img {
+                   width: 100%;
+                   height: 100%;              
+                }        
+        }
+        .detalle-servicios {
+            background-color: map-get($colors, fondoDurazno); 
+            grid-area: detalle-servicios ;
+            display: flex;
+            width: 100%;  
+            flex-direction: row;  
+           justify-content:space-evenly 
+        
+        }
+        
+}

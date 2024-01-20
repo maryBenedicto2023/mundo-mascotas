@@ -1,20 +1,32 @@
 
 .grid-container-index {
-    @include grid (repeat(3, 1fr), 80px 450px 400px 700px  250px , none, none,
-    "header header header "
+    width: 100%;
+    @include grid ( (repeat(3, 1fr)), 80px 450px 400px 700px  250px , none, none,
+    "header header header"
     "presentacion presentacion presentacion"
     "contenedor-servicios contenedor-servicios contenedor-servicios"
     "contenedor-adopciones contenedor-adopciones  contenedor-adopciones"
-    "footer footer footer ");  
-    main {
-        .presentacion{
+    "footer footer footer ");     
+        .presentacion{            
             background-image: url("../../assets/cocker.jpg") ;              
             grid-area: presentacion;
             background-size:cover;    
             background-repeat: no-repeat;
-            @include flex(column,center,end, none);              
-        }       
-
-    } 
+            @include flex(column,center,end, none);  
+               .textos-presentacion {
+                   display: flex;
+                   flex-direction: column;
+                   align-items: center;       
+                   margin-right: 80px;
+                }
+                .parrafo-presentacion{   
+                    font-size: 1.875rem    
+                }           
+        } 
+        .contenedor-servicios {
+             grid-area: contenedor-servicios;
+             background-color: map-get($colors, fondoDuraznoClaro);             
+             align-items: center;
+        }     
 }
 
