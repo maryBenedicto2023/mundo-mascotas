@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 80px 450px 400px 700px 250px;
+  justify-content: none;
+  align-content: none;
+  grid-template-areas: "header header header " "presentacion-planes presentacion-planes presentacion-planes" "intro-planes intro-planes img-planes" "detalle-planes detalle-planes  detalle-planes " "footer footer footer "; }
+
+header {
+  grid-area: header; }
+  header h1 {
+    font-size: 2.5rem; }
+  header .navbar {
+    background-color: #9FBB73;
+    align-items: center; }
+    header .navbar .logo-nav img {
+      width: 90px;
+      margin-left: 20px; }
+    header .navbar .pow {
+      display: flex;
+      font-size: 2.1875rem;
+      font-weight: bold;
+      color: white;
+      padding: 30px 250px 30px 0px; }
+    header .navbar ul {
+      gap: 5.625rem;
+      margin: 1.25rem 0px;
+      padding-right: 60px; }
+      header .navbar ul li {
+        list-style: none; }
+        header .navbar ul li a {
+          text-decoration: none;
+          color: black; }
+          header .navbar ul li a:hover {
+            color: white; }
+
+footer {
+  background-color: #F3B664;
+  grid-area: footer;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  gap: none; }
+  footer .brand-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: none;
+    align-items: center;
+    gap: none; }
+    footer .brand-footer .logo-footer {
+      width: 120px; }
+    footer .brand-footer .pow {
+      padding: 0px;
+      margin: 0px; }
+    footer .brand-footer div .info-contacto {
+      display: flex;
+      flex-direction: row;
+      justify-content: left;
+      align-items: center;
+      gap: none; }
+      footer .brand-footer div .info-contacto .item-info {
+        width: 25px;
+        height: 25px; }
+      footer .brand-footer div .info-contacto .info {
+        font-size: 20px;
+        font-weight: bold;
+        padding-top: 15px;
+        padding-left: 10px; }
+    footer .brand-footer .bloque-redes {
+      justify-content: center;
+      align-items: center; }
+      footer .brand-footer .bloque-redes .seguinos {
+        text-align: center;
+        font-size: 30px;
+        color: white; }
+      footer .brand-footer .bloque-redes .redes {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        gap: none;
+        justify-items: center; }
+        footer .brand-footer .bloque-redes .redes div .item-redes {
+          width: 50px;
+          height: 50px; }

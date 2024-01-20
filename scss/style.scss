@@ -1,0 +1,10 @@
+@import "./utilities/variables";
+@import "./utilities/mixins";
+@import "./utilities/maps";
+
+//los partials de los layouts y base 
+
+@import "./base/reset";
+@import "./layout/body-planes";
+@import "./layout/header";
+@import "./layout/footer";

@@ -1,0 +1,8 @@
+body {
+    @include grid (repeat(3, 1fr), 80px 450px 400px 700px  250px , none, none,
+    "header header header "
+    "presentacion-planes presentacion-planes presentacion-planes"
+    "intro-planes intro-planes img-planes"
+    "detalle-planes detalle-planes  detalle-planes "
+    "footer footer footer ");   
+}
