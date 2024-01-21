@@ -1,32 +1,90 @@
 
 .grid-container-index {
-    width: 100%;
-    @include grid ( (repeat(3, 1fr)), 80px 450px 400px 700px  250px , none, none,
-    "header header header"
+   
+    @include grid(repeat(3, 1fr), 80px 450px 500px 700px  250px , none, none,  
+    "header header header "
     "presentacion presentacion presentacion"
     "contenedor-servicios contenedor-servicios contenedor-servicios"
     "contenedor-adopciones contenedor-adopciones  contenedor-adopciones"
-    "footer footer footer ");     
-        .presentacion{            
-            background-image: url("../../assets/cocker.jpg") ;              
-            grid-area: presentacion;
-            background-size:cover;    
-            background-repeat: no-repeat;
-            @include flex(column,center,end, none);  
-               .textos-presentacion {
-                   display: flex;
-                   flex-direction: column;
-                   align-items: center;       
-                   margin-right: 80px;
-                }
-                .parrafo-presentacion{   
-                    font-size: 1.875rem    
-                }           
-        } 
-        .contenedor-servicios {
-             grid-area: contenedor-servicios;
-             background-color: map-get($colors, fondoDuraznoClaro);             
-             align-items: center;
-        }     
-}
+    "footer footer footer");
+
+
+    // grid($col,$row,$justify, $align,$area){
+    //     display: grid;
+    //     grid-template-columns: $col;
+    //     grid-template-rows: $row;
+    //     justify-content: $justify;
+    //     align-content: $align;
+    //     grid-template-areas: $area;
+
+ 
+    .presentacion{
+        background-color: aqua;
+        grid-area: presentacion;
+        background-size:cover;
+        background-repeat: no-repeat;
+        @include flex(column,center,end, none);   
+            .textos-presentacion {
+                @include flex(column,none,center, none);  
+            margin-right: 80px;
+            }
+            .parrafo-presentacion{   
+               font-size: 1.875rem    
+            }
+  }
+  .contenedor-servicios {
+    //          grid-area: contenedor-servicios;
+          // background-color: map-get($colors, fondoDuraznoClaro); 
+          background-color: blueviolet;            
+    //          align-items: center;
+    //     }     
+    
+       
+        
+        
+    }
+    .contenedor-adopciones{
+        //          grid-area: contenedor-servicios;
+              // background-color: map-get($colors, fondoDuraznoClaro); 
+              background-color: rgb(228, 38, 54);           
+        //          align-items: center;
+        //     }     
+        
+           
+            
+            
+        }
+        
+    
+   
+    // width: 100%;
+    // @include grid ( (repeat(3, 1fr)), 80px 450px 400px 700px  250px , none, none,
+    // "header header header"
+    // "presentacion presentacion presentacion"
+    // "contenedor-servicios contenedor-servicios contenedor-servicios"
+    // "contenedor-adopciones contenedor-adopciones  contenedor-adopciones"
+    // "footer footer footer ");     
+    //     .presentacion{            
+    //         background-image: url("../../assets/cocker.jpg") ;              
+    //         grid-area: presentacion;
+    //         background-size:cover;    
+
+    //         background-repeat: no-repeat;
+    //         @include flex(column,center,end, none);  
+    //            .textos-presentacion {
+    //                display: flex;
+    //                flex-direction: column;
+    //                align-items: center;       
+    //                margin-right: 80px;
+    //             }
+    //             .parrafo-presentacion{   
+    //                 font-size: 1.875rem    
+    //             }           
+    //     } 
+    //     .contenedor-servicios {
+    //          grid-area: contenedor-servicios;
+    //          background-color: map-get($colors, fondoDuraznoClaro);             
+    //          align-items: center;
+       }     
+
 

@@ -1,6 +1,7 @@
 footer{
-    background-color: $footerColor;
     grid-area: footer;
+    background-color: $footerColor;
+    
     @include flex(row,space-around,center, none);
        .brand-footer {
         @include flex(row,none,center, none);

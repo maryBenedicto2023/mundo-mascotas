@@ -18,10 +18,14 @@ h3 {
   text-align: center;
   padding: 15px 15px 15px 0px; }
 
+body {
+  font-family: 'Exo 2', sans-serif;
+  width: 100%; }
+
 .grid-container-servicios {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 80px 450px 400px 700px 250px;
+  grid-template-rows: 50px 450px 400px 700px 250px;
   justify-content: none;
   align-content: none;
   grid-template-areas: "header header header " "presentacion-servicios presentacion-servicios presentacion-servicios" "intro-servicios intro-servicios img-servicios" "detalle-servicios detalle-servicios  detalle-servicios " "footer footer footer "; }
@@ -38,8 +42,8 @@ h3 {
     .grid-container-servicios .presentacion-servicios .textos-presentacion {
       display: flex;
       flex-direction: column;
-      justify-content: none;
-      align-items: center;
+      justify-content: center;
+      align-items: end;
       gap: none;
       margin-right: 80px; }
   .grid-container-servicios .intro-servicios {
@@ -71,34 +75,23 @@ h3 {
   grid-template-areas: "header header header " "presentacion-planes presentacion-planes presentacion-planes" "intro-planes intro-planes img-planes" "detalle-planes detalle-planes  detalle-planes " "footer footer footer "; }
 
 .grid-container-index {
-  width: 100%;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 80px 450px 400px 700px 250px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 100px 400px 600px 600px 200px;
   justify-content: none;
   align-content: none;
-  grid-template-areas: "header header header" "presentacion presentacion presentacion" "contenedor-servicios contenedor-servicios contenedor-servicios" "contenedor-adopciones contenedor-adopciones  contenedor-adopciones" "footer footer footer "; }
+  grid-template-areas: "header header header" "presentacion presentacion presentacion" "contenedor-servicios contenedor-servicios contenedor-servicios" "contenedor-adopciones contenedor-adopciones  contenedor-adopciones" "footer footer footer"; }
   .grid-container-index .presentacion {
-    background-image: url("../../assets/cocker.jpg");
     grid-area: presentacion;
+    background-image: url("./../assets/cocker.jpg");
     background-size: cover;
-    background-repeat: no-repeat;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: end;
-    gap: none; }
-    .grid-container-index .presentacion .textos-presentacion {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      margin-right: 80px; }
-    .grid-container-index .presentacion .parrafo-presentacion {
-      font-size: 1.875rem; }
+    background-repeat: no-repeat; }
   .grid-container-index .contenedor-servicios {
     grid-area: contenedor-servicios;
-    background-color: #F3B664;
-    align-items: center; }
+    background-color: #F3B664; }
+  .grid-container-index .contenedor-adopciones {
+    grid-area: contenedor-adopciones;
+    background-color: #F4DFB6; }
 
 header {
   grid-area: header; }
@@ -130,8 +123,8 @@ header {
           color: white; }
 
 footer {
-  background-color: #F3B664;
   grid-area: footer;
+  background-color: #F3B664;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
