@@ -1,5 +1,5 @@
 .grid-container-servicios {    
-    @include grid( repeat(3, 1fr),50px 450px 400px 700px  250px , none, none,  
+    @include grid( repeat(3, 1fr),80px 450px 400px 700px  250px , none, none,  
         "header header header "
         "presentacion-servicios presentacion-servicios presentacion-servicios"
         "intro-servicios intro-servicios img-servicios"
@@ -7,13 +7,13 @@
         "footer footer footer ");
 
         .presentacion-servicios {
-            background-image: url("../../assets/dog-grass-sky.jpg") ;
+            background-image: url("./../assets/dog-grass-sky.jpg") ;
             grid-area: presentacion-servicios ;
             background-size:cover;
             background-repeat: no-repeat;
             @include flex(column,center,end, none);   
                   .textos-presentacion {
-                        @include flex(column,center,end, none);                  
+                        @include flex(column,none,center, none);                  
                         margin-right: 80px;
                     }
             

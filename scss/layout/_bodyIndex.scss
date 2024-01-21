@@ -52,7 +52,7 @@
     //     "contenedor-adopciones contenedor-adopciones  contenedor-adopciones "
     //     "footer footer footer ";
     // width: 100%;
-    @include grid (1fr 1fr 1fr,100px 400px 600px 600px  200px, none, none,"header header header" "presentacion presentacion presentacion" "contenedor-servicios contenedor-servicios contenedor-servicios"
+    @include grid (1fr 1fr 1fr,80px 450px 600px 600px  200px, none, none,"header header header" "presentacion presentacion presentacion" "contenedor-servicios contenedor-servicios contenedor-servicios"
     "contenedor-adopciones contenedor-adopciones  contenedor-adopciones" "footer footer footer" );  
     
     //    main {
@@ -62,7 +62,14 @@
                grid-area: presentacion;            
                background-image: url("./../assets/cocker.jpg") ;  
                background-size:cover;    
-               background-repeat: no-repeat;   
+               background-repeat: no-repeat;  
+               @include flex(column,center,end, none);   
+               .textos-presentacion {
+                display: flex;
+                flex-direction: column;
+                align-items: center;       
+                margin-right: 80px;
+            } 
           }
           .contenedor-servicios {
               grid-area: contenedor-servicios;

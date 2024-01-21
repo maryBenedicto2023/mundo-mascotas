@@ -1,8 +1,103 @@
 .grid-container-planes {
-    @include grid (repeat(3, 1fr), 80px 450px 400px 700px  250px , none, none,
+    width: 100%;
+    @include grid (repeat(3, 1fr),80px 450px 400px 700px  250px , none, none,
     "header header header "
     "presentacion-planes presentacion-planes presentacion-planes"
     "intro-planes intro-planes img-planes"
     "detalle-planes detalle-planes  detalle-planes "
-    "footer footer footer ");   
+    "footer footer footer "); 
+    
+    .presentacion-planes {
+        background-image: url("./../assets/peluqueria.jpg") ;
+        grid-area: presentacion-planes ;
+        background-size:cover;
+        background-repeat: no-repeat;
+        @include flex(column,center,end, none);   
+        // @include flex(column,center,end, none); 
+        .textos-presentacion {           
+                @include flex(column,none,center, none);                  
+                margin-right: 80px;
+        }  
+    }
+    .intro-planes {
+        background-color:map-get($colors, fondoCrema); 
+        grid-area: intro-planes ;
+        // align-items: center;
+        // justify-items: center;
+    }   
+    .img-planes {
+        width: 100%;
+        height: 100%;   
+        grid-area:img-planes ;
+    }
+    .detalle-planes {
+        background-color: map-get($colors, fondoDurazno); 
+        grid-area: detalle-planes ;
+         @include flex(row,space-evenly,none, none); 
+        // width: 100%;  
+        .card  {
+            margin-top:20px;
+            margin-bottom: 20px;
+             width: 288px;  
+             .card-body{
+                text-align: center;
+                background-color: #F4DFB6;
+                div {
+                    .img-star {
+                        width: 40px;
+                        height: 40px;
+                    }
+
+                }
+
+             } 
+         }
+        
+    }
+
+
+
+
+
+
+
+    // .presentacion-servicios {
+    //     background-image: url("./../assets/dog-grass-sky.jpg") ;
+    //     grid-area: presentacion-servicios ;
+    //     background-size:cover;
+    //     background-repeat: no-repeat;
+    //     @include flex(column,center,end, none);   
+    //           .textos-presentacion {
+    //                 @include flex(column,center,end, none);                  
+    //                 margin-right: 80px;
+    //             }
+        
+    // }
+    // .intro-servicios {
+    //     background-color: map-get($colors, fondoCrema); 
+    //     grid-area: intro-servicios ;
+    //     align-items: center;
+    //     justify-items: center;
+    // }
+    // .img-servicios {
+    //     width: 100%;
+    //     height: 100%;   
+    //     grid-area:img-servicios ;
+    //         img {
+    //            width: 100%;
+    //            height: 100%;              
+    //         }        
+    // }
+    // .detalle-servicios {
+    //     background-color: map-get($colors, fondoDurazno); 
+    //     grid-area: detalle-servicios ;
+    //     display: flex;
+    //     width: 100%;  
+    //     flex-direction: row;  
+    //    justify-content:space-evenly 
+    
+    // }
+    
+
+
 }
