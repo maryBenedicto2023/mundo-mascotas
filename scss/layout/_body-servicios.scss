@@ -39,7 +39,17 @@
             display: flex;
             width: 100%;  
             flex-direction: row;  
-           justify-content:space-evenly 
+           justify-content:space-evenly;
+                .card  {
+                  margin-top:20px;
+                  margin-bottom: 20px;
+                  width: 320px; 
+                    .card-body {
+                         text-align: center;
+                         background-color: #F4DFB6;
+                    }
+                
+                }
         
         }
         
