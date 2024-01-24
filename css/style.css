@@ -16,8 +16,7 @@ h2 {
 h3 {
   font-size: 1.875rem;
   text-align: center;
-  padding: 15px 15px 15px 0px;
-  padding: 30px; }
+  padding: 15px; }
 
 .card-text {
   font-weight: bold; }
@@ -25,7 +24,7 @@ h3 {
 .parrafo-nosotros {
   font-size: 25px;
   text-align: left;
-  padding: 1.5625rem;
+  padding: 40px;
   line-height: 40px; }
 
 body {
@@ -87,7 +86,7 @@ body {
   width: 100%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 80px 450px 400px 700px 250px;
+  grid-template-rows: 80px 450px 400px 650px 250px;
   justify-content: none;
   align-content: none;
   grid-template-areas: "header header header " "presentacion-planes presentacion-planes presentacion-planes" "intro-planes intro-planes img-planes" "detalle-planes detalle-planes  detalle-planes " "footer footer footer "; }
@@ -137,7 +136,7 @@ body {
 .grid-container-index {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 80px 450px 600px 450px 250px;
+  grid-template-rows: 110px 450px 600px 450px 250px;
   justify-content: none;
   align-content: none;
   grid-template-areas: "header header header" "presentacion presentacion presentacion" "contenedor-servicios contenedor-servicios contenedor-servicios" "contenedor-adopciones contenedor-adopciones  contenedor-adopciones" "footer footer footer"; }
@@ -175,10 +174,66 @@ body {
         height: 15.625rem;
         border-radius: 150px; }
 
+.grid-container-nosotros {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 80px 450px 450px 500px 250px;
+  justify-content: none;
+  align-content: none;
+  grid-template-areas: "header header header " "presentacion-nosotros presentacion-nosotros presentacion-nosotros" "contenedor-compromiso contenedor-compromiso contenedor-compromiso" "contenedor-equipo contenedor-equipo  contenedor-equipo " "footer footer footer "; }
+  .grid-container-nosotros .presentacion-nosotros {
+    background-image: url("./../assets/gatitos.jpg");
+    grid-area: presentacion-nosotros;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+    gap: none; }
+    .grid-container-nosotros .presentacion-nosotros .textos-presentacion {
+      display: flex;
+      flex-direction: column;
+      justify-content: none;
+      align-items: center;
+      gap: none;
+      margin-right: 80px; }
+  .grid-container-nosotros .contenedor-compromiso {
+    grid-area: contenedor-compromiso;
+    background-color: #F1EB90; }
+    .grid-container-nosotros .contenedor-compromiso .compromiso {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center; }
+      .grid-container-nosotros .contenedor-compromiso .compromiso .quality {
+        width: 300px;
+        height: 300px;
+        padding: 30px; }
+  .grid-container-nosotros .contenedor-equipo {
+    background-color: #EC8F5E;
+    grid-area: contenedor-equipo;
+    display: flex;
+    flex-direction: column; }
+    .grid-container-nosotros .contenedor-equipo .titulo-equipo {
+      font-size: 30px;
+      text-align: left;
+      padding-left: 20px;
+      padding-top: 30px; }
+    .grid-container-nosotros .contenedor-equipo .compromiso {
+      display: flex;
+      flex-direction: row;
+      align-items: center; }
+      .grid-container-nosotros .contenedor-equipo .compromiso .foto-equipo {
+        width: 400px;
+        height: 400px;
+        padding-right: 30px;
+        padding-bottom: 20px; }
+
 header {
   grid-area: header; }
   header .navbar {
-    background-color: #9FBB73;
+    background-color: #54b85d;
     display: flex;
     align-items: center; }
     header .navbar .logo-nav img {
