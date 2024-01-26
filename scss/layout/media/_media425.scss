@@ -1,0 +1,281 @@
+@media (max-width: 425px)  {
+    .grid-container-servicios {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 100%;
+        /* grid-template-rows: 20px 200px 300px 300px 40px ; */
+        grid-template-rows: auto 200px auto auto auto ;
+        grid-template-areas:
+            "header  "
+            "presentacion-servicios "
+            "intro-servicios "
+            "detalle-servicios "
+            "footer ";
+    }
+
+    .img-planes {
+        display: none;
+    }
+
+    footer .pow {
+        display: none;
+    }
+
+  header {
+    justify-content: center;
+  }
+
+  .logo-nav img {
+width: 100px;
+height: 100px;
+padding: 0px;
+  }
+  .pow {
+       padding: 0px;
+       font-size: 35px;
+  }
+
+.navbar { 
+    flex-direction: column;   
+}
+.navbar ul{ 
+    gap: 3px;
+    flex-direction: column; 
+    margin: 0px;
+    padding: 0px;
+    justify-self: center;
+    padding: 20px;    
+}
+
+ .navbar ul li {
+text-align: center;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+    font-weight: bold; 
+   justify-self: center;    
+} 
+
+h1{
+    font-size: 30px;   
+}
+h2 {
+    /* font-weight: bold; */
+    font-size: 20px;
+    text-align: center; 
+    padding: 20px 0px 5px 0px;
+}
+
+.textos-presentacion {       
+    margin-right: 30px;
+}
+
+.parrafo-nosotros {
+    font-size: 20px;
+    text-align:center;
+    padding: 20px;
+    line-height: 25px;        
+}
+
+.detalle-servicios {
+display: block;
+}
+
+.card  {
+   margin: 30px;
+    width: 320px;
+     align-self: center;        
+}
+
+.card-text  {
+    font-size:20px;    
+        }         
+        .card-title  {
+            font-size:25px;
+                }
+                footer {
+                    display: block;
+                    justify-content: center;
+                }
+                .bloque-redes {    
+                    padding: 15px;
+                    margin-bottom: 20px;                   
+                  } 
+                  .info-contacto{    
+                    justify-content: center;           
+                } 
+                footer  .logo-footer {  
+                    width: 100px;                    
+                } 
+                .brand-footer {
+                    justify-content: center;    
+                }  
+                
+                .seguinos {                   
+                    font-size: 25px;
+                    
+                    }
+                    .grid-container-planes {
+                        width: 100%;
+                        display: grid;
+                        grid-template-columns: 100%;
+                        /* grid-template-rows: 20px 200px 300px 300px 40px ; */
+                        grid-template-rows: auto 200px auto auto auto ;
+                        grid-template-areas:
+                            "header  "
+                            "presentacion-planes "
+                            "intro-planes "
+                            "detalle-planes "
+                            "footer ";
+                    }
+
+                    .detalle-planes {
+                        display: block;
+                        }
+                       
+}
+
+
+
+
+
+// @media (max-width: 425px)  {
+//     .grid-container-servicios {
+//        /* // width: 100%; */
+//         display: grid;
+//         grid-template-columns: repeat(1, 100%);
+//         /* grid-template-rows: 20px 200px 300px 300px 40px ; */
+//         grid-template-rows: auto 200px auto auto auto ;
+//         grid-template-areas:
+//             "header  "
+//             "presentacion-servicios "
+//             "intro-servicios "
+//             "detalle-servicios "
+//             "footer ";
+//     }
+
+//     footer {
+//         .pow {
+//             display: none;
+//         }
+//     }
+
+//     header {
+//     justify-content: center;
+
+//     .navbar { 
+//         flex-direction: column;  
+//         .pow {
+//             padding: 0px;
+//             font-size: 35px;
+//         }
+//        .logo-nav {
+//             img {
+//                 width: 100px;
+//                 height: 100px;
+//                 padding: 0px;
+//             }
+//         }
+//        ul{ 
+//         gap: 3px;
+//         flex-direction: column; 
+//         margin: 0px;
+//         padding: 0px;
+//         justify-self: center;
+//         padding: 20px;  
+//             li {
+//                 text-align: center;
+//                 a{
+//                     text-decoration: none;
+//                     color: black;
+//                     font-size: 25px;
+//                     font-weight: bold; 
+//                     justify-self: center;    
+//                 } 
+//             }
+//         }
+        
+//     }
+//   }
+// h1{
+//     font-size: 30px;   
+// }
+// h2 {    
+//     font-size: 20px;
+//     text-align: center; 
+//     padding: 15px 0px 5px 0px;
+// }
+
+// .parrafo-nosotros {
+//     font-size: 15px;
+//     text-align: left;
+//     padding: 15px;
+//     line-height: 20px;        
+// }
+
+// .detalle-servicios {
+// display: block;
+// .card {
+//     margin: 30px;
+//     width: 320px;
+//     align-self: center;   
+//     .card-body {
+//         align-content: center;
+//         .card-title {
+//             font-size:25px;
+//         } 
+//         .card-text {
+//             font-size:15px;    
+//         }  
+//     }   
+//  }
+// }   
+       
+// footer {
+//     display: block;
+//     justify-content: center;
+//     .brand-footer {
+//         justify-content: center;    
+//     }  
+//     .logo-footer {  
+//         width: 100px;                    
+//     } 
+//     .bloque-redes {    
+//         padding: 15px;
+//         margin-bottom: 20px; 
+//         .seguinos {                   
+//             font-size: 25px;                    
+//         }
+//     } 
+//     .bloque-info-contacto{
+//         .info-contacto{    
+//             justify-content: center;           
+//         } 
+//     }
+// }             
+// .grid-container-planes {
+//     width: 100%;
+//     display: grid;
+//     grid-template-columns:  100%;
+//     /* grid-template-rows: 20px 200px 300px 300px 40px ; */
+//     grid-template-rows: auto 200px auto auto auto ;
+//     grid-template-areas:
+//         "header  "
+//         "presentacion-planes "
+//         "intro-planes "
+//         "detalle-planes "
+//         "footer ";
+
+//         .img-planes {
+//             display: none;
+//         }
+//         .detalle-planes {
+//             display: block;
+//             justify-content: center;
+//         }
+// }                  
+                       
+// }
