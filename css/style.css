@@ -230,6 +230,63 @@ body {
         padding-right: 30px;
         padding-bottom: 20px; }
 
+.grid-container-adopciones {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 80px 500px 1150px 250px;
+  justify-content: none;
+  align-content: none;
+  grid-template-areas: "header header header " "presentacion-adopciones presentacion-adopciones presentacion-adopciones" "adopciones-ofrecidas adopciones-ofrecidas adopciones-ofrecidas" "footer footer footer "; }
+  .grid-container-adopciones .presentacion-adopciones {
+    background-image: url("./../assets/pets-group.jpg");
+    grid-area: presentacion-adopciones;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+    gap: none; }
+    .grid-container-adopciones .presentacion-adopciones .textos-presentacion {
+      display: flex;
+      flex-direction: column;
+      justify-content: none;
+      align-items: center;
+      gap: none;
+      margin-right: 80px; }
+  .grid-container-adopciones .adopciones-ofrecidas {
+    width: 100%;
+    grid-area: adopciones-ofrecidas;
+    background-color: #F1EB90; }
+    .grid-container-adopciones .adopciones-ofrecidas .grid-galeria-adopciones {
+      background-color: #F1EB90;
+      padding: 30px;
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(4, 15%);
+      grid-template-rows: repeat(3, 300px);
+      grid-template-areas: "img-4 img-4 img-6 img-6" "img-1 img-1 img-3 img-3" "img-1 img-1 img-7 img-7";
+      align-content: center;
+      justify-content: center;
+      gap: 20px; }
+      .grid-container-adopciones .adopciones-ofrecidas .grid-galeria-adopciones .imagen-galeria {
+        width: 100%;
+        height: 100%; }
+      .grid-container-adopciones .adopciones-ofrecidas .grid-galeria-adopciones .imagen-galeria img {
+        width: 100%;
+        height: 100%; }
+      .grid-container-adopciones .adopciones-ofrecidas .grid-galeria-adopciones .img-1 {
+        grid-area: img-1; }
+      .grid-container-adopciones .adopciones-ofrecidas .grid-galeria-adopciones .img-3 {
+        grid-area: img-3; }
+      .grid-container-adopciones .adopciones-ofrecidas .grid-galeria-adopciones .img-4 {
+        grid-area: img-4; }
+      .grid-container-adopciones .adopciones-ofrecidas .grid-galeria-adopciones .img-6 {
+        grid-area: img-6; }
+      .grid-container-adopciones .adopciones-ofrecidas .grid-galeria-adopciones .img-7 {
+        grid-area: img-7; }
+
 header {
   grid-area: header; }
   header .navbar {

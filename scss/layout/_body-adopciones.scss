@@ -1,0 +1,65 @@
+.grid-container-adopciones {
+    width: 100%;
+    @include grid (repeat(3, 1fr),80px 500px 1150px  250px , none, none,
+    "header header header "
+    "presentacion-adopciones presentacion-adopciones presentacion-adopciones"
+    "adopciones-ofrecidas adopciones-ofrecidas adopciones-ofrecidas"    
+    "footer footer footer "); 
+    
+    .presentacion-adopciones {
+        background-image: url("./../assets/pets-group.jpg") ;
+        grid-area: presentacion-adopciones ;
+        background-size:cover;
+        background-repeat: no-repeat;
+        @include flex(column,center,end, none); 
+        .textos-presentacion {           
+                @include flex(column,none,center, none);                  
+                margin-right: 80px;
+        }  
+    }    
+        .adopciones-ofrecidas{
+            width: 100%;
+            grid-area: adopciones-ofrecidas;
+            background-color: map-get($colors, fondoAmarillo);  
+            
+            .grid-galeria-adopciones {
+                background-color:#F1EB90;
+                padding: 30px;
+                width: 100%;
+                display: grid;
+                grid-template-columns: repeat(4, 15%);
+                grid-template-rows: repeat(3, 300px);
+                grid-template-areas:           
+                    "img-4 img-4 img-6 img-6"
+                    "img-1 img-1 img-3 img-3"
+                    "img-1 img-1 img-7 img-7";           
+                   align-content: center;
+                   justify-content: center;
+                   gap: 20px;
+                        .imagen-galeria{
+                                        width: 100%;
+                                        height: 100%;
+                                    }
+                                    .imagen-galeria img{
+                                        width: 100%;
+                                        height: 100%;                                       
+                                    }
+                                    .img-1 {
+                                        grid-area:img-1;
+                                    }
+                                    .img-3 {
+                                        grid-area:img-3 ;
+                                    }
+                                    .img-4 {
+                                        grid-area:img-4 ;
+                                    }
+                                    .img-6 {
+                                        grid-area:img-6 ;}
+                                     .img-7 {
+                                       grid-area:img-7 ;
+                                    }
+            }
+    
+        }
+       
+    }
