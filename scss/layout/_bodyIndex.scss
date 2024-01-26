@@ -1,5 +1,5 @@
 .grid-container-index { 
-    @include grid (1fr 1fr 1fr,80px 450px 600px 450px 250px, none, none,"header header header" "presentacion presentacion presentacion" "contenedor-servicios contenedor-servicios contenedor-servicios"
+    @include grid (1fr 1fr 1fr,110px 450px 600px 450px 250px, none, none,"header header header" "presentacion presentacion presentacion" "contenedor-servicios contenedor-servicios contenedor-servicios"
     "contenedor-adopciones contenedor-adopciones  contenedor-adopciones" "footer footer footer" );  
     
           .presentacion{ 
