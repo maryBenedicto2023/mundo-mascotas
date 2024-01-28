@@ -1,6 +1,9 @@
 .grid-container-index { 
-    @include grid (1fr 1fr 1fr,110px 450px 600px 450px 250px, none, none,"header header header" "presentacion presentacion presentacion" "contenedor-servicios contenedor-servicios contenedor-servicios"
-    "contenedor-adopciones contenedor-adopciones  contenedor-adopciones" "footer footer footer" );  
+    @include grid (1fr 1fr 1fr,90px 450px 600px 450px 250px, none, none,"header header header" 
+    "presentacion presentacion presentacion"
+     "contenedor-servicios contenedor-servicios contenedor-servicios"
+    "contenedor-adopciones contenedor-adopciones  contenedor-adopciones"
+     "footer footer footer" );  
     
           .presentacion{ 
                grid-area: presentacion;            
@@ -20,7 +23,26 @@
           }
           .contenedor-servicios {
               grid-area: contenedor-servicios;
-              background-color: map-get($colors, fondoDuraznoClaro);           
+              background-color: map-get($colors, fondoDuraznoClaro); 
+              
+                .contenedor-cards{   
+                    @include flex(row,space-evenly,none,none); 
+                    .card{
+                        width: 350px;
+                        height: 400px;                       
+                        background-color: map-get($colors, fondoCrema);
+                        text-align: center;
+                        border: 1px solid rgba(0, 0, 0, 0.278);
+                        border-radius: 1.25rem;
+                        overflow: hidden; 
+                        @include flex(column,none,center, none); 
+                        .img-card {
+                            width: 300px;
+                            padding: 5px 0px 35px 0px;                  
+                        }          
+                    }
+                }              
+                    
           }
           .contenedor-adopciones{
               grid-area: contenedor-adopciones;

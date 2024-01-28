@@ -1,40 +1,42 @@
 @media (max-width: 1024px)  {
-    .navbar {
-        ul{        
-           gap: 50px;        
-           padding-right: 40px; 
-           padding-left: 140px;   
+    header {
+        .navbar{
+            background-color:gray;            
+            .logo-nav {                
+                img{                   
+                     margin-left: 40px; 
+                }
+            }
+            .pow {               
+                font-size: 30px;                
+            }
+            ul{              
+                gap: 2.5rem;
+                padding-right: 30px; 
+                margin-left: 60px;
+            }
         }
-        .logo-nav img{      
-            width: 80px;
-            margin-left: 15px;  
-            padding: 0px;         
-        } 
-    } 
-    .pow {
-    padding: 0px;
     }
-    .detalle-planes .card{
-        width:220px ;
+    .grid-container-index { 
+        .contenedor-servicios {       
+          .contenedor-cards{ 
+            padding-left: .9375rem;
+            padding-right: .9375rem;         
+              .card{
+                  width: 280px;
+                  height: 400px;                 
+                 // background-color: map-get($colors, fondoCrema);                  
+                  .img-card {
+                      width: 250px;
+                      padding: 5px 0px 35px 0px;                  
+                    }          
+               }
+            }              
+              
+        }
     }
-     
+
 }
 
 
-// @media (max-width: 1024px) {
-//     .navbar{
-//         ul{        
-//         gap: 50px;        
-//         padding-right: 40px; 
-//         padding-left: 140px; } 
-        
-//         .logo-nav img{      
-//             width: 80px;
-//             margin-left: 15px;  
-//             padding: 0px;         
-//         }         
-//         .pow {
-//         padding: 0px;
-//         }
-//     }   
-// }
+

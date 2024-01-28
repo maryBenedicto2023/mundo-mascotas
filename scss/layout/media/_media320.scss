@@ -1,24 +1,29 @@
 @media (max-width: 320px)  {
-    .grid-container-planes {
-        width: 100%;
-        display: grid;
-        grid-template-columns: 100%;
-        /* grid-template-rows: 20px 200px 300px 300px 40px ; */
-        grid-template-rows: auto 200px auto auto auto ;
-        grid-template-areas:
-            "header  "
-            "presentacion-planes "
-            "intro-planes "
-            "detalle-planes "
-            "footer ";
-    }
-
-    .detalle-planes {
-        display: block;
+    header {
+        .navbar {
+            background-color:lightblue;
         }
+    } 
+    // .grid-container-planes {
+    //     width: 100%;
+    //     display: grid;
+    //     grid-template-columns: 100%;
+    //     /* grid-template-rows: 20px 200px 300px 300px 40px ; */
+    //     grid-template-rows: auto 200px auto auto auto ;
+    //     grid-template-areas:
+    //         "header  "
+    //         "presentacion-planes "
+    //         "intro-planes "
+    //         "detalle-planes "
+    //         "footer ";
+    // }
 
-        .img-planes {
-            display: none;
-        }
+    // .detalle-planes {
+    //     display: block;
+    //     }
+
+    //     .img-planes {
+    //         display: none;
+    //     }
     
 }

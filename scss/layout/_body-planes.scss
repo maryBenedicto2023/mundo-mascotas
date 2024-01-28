@@ -1,5 +1,4 @@
-.grid-container-planes {
-    width: 100%;
+.grid-container-planes {   
     @include grid (repeat(3, 1fr),80px 450px 400px 650px  250px , none, none,
     "header header header "
     "presentacion-planes presentacion-planes presentacion-planes"

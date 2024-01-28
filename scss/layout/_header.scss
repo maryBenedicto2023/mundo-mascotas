@@ -3,26 +3,32 @@ header{
     
     .navbar{
         background-color: $navbarColor;
-        display: flex;    
+        display: flex;        
         align-items: center;
         .logo-nav {
             img{
                 width: 90px;
-                margin-left: 20px;  
+                 margin-left: 50px;  
             }
         }
         .pow {
-            display: flex;
-            font-size: 2.1875rem;
+           // display: flex;
+            font-size: 35px;
             font-weight: bold;
-            color: $whiteColor;  
-            padding: 30px 250px 30px 0px;
+            color: $whiteColor; 
+            
+            // padding: 30px 0px 30px 0px;
         }
         ul{
             display: flex;
-            gap: 5.625rem;
-            margin: 1.25rem 0px;            
-            padding-right: 60px; 
+            gap: 5rem;
+            // margin: 1.25rem 0px; 
+            margin-top:1.25rem ; 
+            margin-bottom:1.25rem ; 
+            
+            //  padding: left 150px;        
+            margin-right: 70px; 
+            margin-left: 180px;
             list-style: none;
             li{                
                 a{
