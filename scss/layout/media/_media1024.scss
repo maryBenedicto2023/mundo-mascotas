@@ -1,7 +1,6 @@
 @media (max-width: 1024px)  {
     header {
-        .navbar{
-            background-color:gray;            
+        .navbar{                 
             .logo-nav {                
                 img{                   
                      margin-left: 40px; 
@@ -25,18 +24,15 @@
             padding-bottom: .9375rem ;       
               .card{
                   width: 310px;
-                   height: 400px;                 
-                 // background-color: map-get($colors, fondoCrema);                  
+                   height: 400px;                       
                   .img-card {
                       width: 280px;
                       padding: 5px 0px 35px 0px;                  
                     }          
                }
-            }              
-              
+            }                  
         }
     }
-
 }
 
 

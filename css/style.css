@@ -417,16 +417,14 @@ footer {
     font-weight: bold; }
 
 @media (max-width: 1024px) {
-  header .navbar {
-    background-color: gray; }
-    header .navbar .logo-nav img {
-      margin-left: 40px; }
-    header .navbar .pow {
-      font-size: 30px; }
-    header .navbar ul {
-      gap: 2.5rem;
-      padding-right: 30px;
-      margin-left: 60px; }
+  header .navbar .logo-nav img {
+    margin-left: 40px; }
+  header .navbar .pow {
+    font-size: 30px; }
+  header .navbar ul {
+    gap: 2.5rem;
+    padding-right: 30px;
+    margin-left: 60px; }
   .grid-container-index .contenedor-servicios .contenedor-cards {
     padding-left: .9375rem;
     padding-right: .9375rem;
@@ -444,19 +442,35 @@ footer {
     grid-template-columns: repeat(3, 33%);
     grid-template-rows: 70px 290px 250px 560px  180px;
     grid-template-areas: "header header header " "presentacion-servicios presentacion-servicios presentacion-servicios" "intro-servicios intro-servicios img-servicios" "detalle-servicios detalle-servicios  detalle-servicios " "footer footer footer "; }
-  header .navbar {
-    background-color: yellow; }
-    header .navbar .logo-nav img {
-      width: 80px;
-      margin-left: 15px; }
-    header .navbar .pow {
-      font-size: 1.25rem; }
-    header .navbar ul {
-      gap: 2.5rem;
-      margin-right: 20px;
-      margin-left: 90px; }
-      header .navbar ul li a {
-        font-size: .9375rem; } }
+  .grid-container-index {
+    grid-template-rows: 90px 350px 500px 300px 250px; }
+    .grid-container-index .contenedor-servicios .contenedor-cards {
+      padding-bottom: 5px; }
+      .grid-container-index .contenedor-servicios .contenedor-cards .card {
+        width: 220px;
+        height: 350px; }
+        .grid-container-index .contenedor-servicios .contenedor-cards .card .img-card {
+          width: 200px;
+          padding: 5px 0px 35px 0px; }
+    .grid-container-index .contenedor-adopciones .items-adopcion .item .en-adopcion {
+      width: 9.375rem;
+      height: 9.375rem;
+      border-radius: 150px; }
+    .grid-container-index .contenedor-adopciones .items-adopcion .item .btn-ver-mas .btn-adopciones {
+      align-self: center; }
+  footer .brand-footer .pow {
+    display: none; }
+  header .navbar .logo-nav img {
+    width: 80px;
+    margin-left: 15px; }
+  header .navbar .pow {
+    font-size: 1.25rem; }
+  header .navbar ul {
+    gap: 2.5rem;
+    margin-right: 20px;
+    margin-left: 90px; }
+    header .navbar ul li a {
+      font-size: .9375rem; } }
 
 @media (max-width: 425px) {
   header {
