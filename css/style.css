@@ -429,12 +429,13 @@ footer {
       margin-left: 60px; }
   .grid-container-index .contenedor-servicios .contenedor-cards {
     padding-left: .9375rem;
-    padding-right: .9375rem; }
+    padding-right: .9375rem;
+    padding-bottom: .9375rem; }
     .grid-container-index .contenedor-servicios .contenedor-cards .card {
-      width: 280px;
+      width: 310px;
       height: 400px; }
       .grid-container-index .contenedor-servicios .contenedor-cards .card .img-card {
-        width: 250px;
+        width: 280px;
         padding: 5px 0px 35px 0px; } }
 
 @media (max-width: 768px) {

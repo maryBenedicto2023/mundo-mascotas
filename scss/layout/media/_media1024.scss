@@ -21,13 +21,14 @@
         .contenedor-servicios {       
           .contenedor-cards{ 
             padding-left: .9375rem;
-            padding-right: .9375rem;         
+            padding-right: .9375rem;  
+            padding-bottom: .9375rem ;       
               .card{
-                  width: 280px;
-                  height: 400px;                 
+                  width: 310px;
+                   height: 400px;                 
                  // background-color: map-get($colors, fondoCrema);                  
                   .img-card {
-                      width: 250px;
+                      width: 280px;
                       padding: 5px 0px 35px 0px;                  
                     }          
                }
