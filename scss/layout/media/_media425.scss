@@ -251,10 +251,28 @@ h3{
         "presentacion-adopciones "
         "adopciones-ofrecidas "       
         "footer ";
+        .adopciones-ofrecidas{
+            .grid-galeria-adopciones {           
+                padding: 20px;
+                width: 100%;           
+                grid-template-columns: 100%;
+                grid-template-rows: auto;
+                grid-template-areas:           
+                    "img-4 "
+                    "img-6 "
+                    "img-1 "
+                    "img-3 "
+                    "img-7 "
+                    ;           
+                   align-content: center;
+                   justify-content: center;
+                //    gap: 20px;
+           
+            }
+    }
 
-       
-
-}
+        }
+        
 
 .grid-container-planes {
     width: 100%;

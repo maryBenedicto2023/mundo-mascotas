@@ -613,6 +613,14 @@ footer {
     /* grid-template-rows: 20px 200px 300px 300px 40px ; */
     grid-template-rows: auto 200px auto auto auto;
     grid-template-areas: "header  " "presentacion-adopciones " "adopciones-ofrecidas "        "footer "; }
+    .grid-container-adopciones .adopciones-ofrecidas .grid-galeria-adopciones {
+      padding: 20px;
+      width: 100%;
+      grid-template-columns: 100%;
+      grid-template-rows: auto;
+      grid-template-areas: "img-4 " "img-6 " "img-1 " "img-3 " "img-7 ";
+      align-content: center;
+      justify-content: center; }
   .grid-container-planes {
     width: 100%;
     display: grid;
