@@ -511,13 +511,17 @@ footer {
       footer .bloque-redes .seguinos {
         font-size: 25px; }
   h1, h2, h3 {
-    font-size: 25px;
-    text-align: end; }
+    font-size: 30px;
+    text-align: end;
+    margin-right: .625rem; }
   h2 {
     /* font-weight: bold; */
-    font-size: 20px;
+    font-size: 28px;
     text-align: center;
     padding: 20px 0px 5px 0px; }
+  h3 {
+    font-size: 25px;
+    text-align: center; }
   .parrafo-nosotros {
     font-size: 20px;
     text-align: center;
@@ -557,8 +561,8 @@ footer {
       justify-items: center;
       padding-bottom: 1.25rem; }
       .grid-container-index .contenedor-adopciones .items-adopcion .item .en-adopcion {
-        width: 18.75rem;
-        height: 18.75rem;
+        width: 15.625rem;
+        height: 15.625rem;
         border-radius: 150px; }
   .grid-container-nosotros {
     width: 100%;
@@ -567,11 +571,33 @@ footer {
     /* grid-template-rows: 20px 200px 300px 300px 40px ; */
     grid-template-rows: auto 200px auto auto auto;
     grid-template-areas: "header  " "presentacion-nosotros" "contenedor-compromiso" "contenedor-equipo"        "footer "; }
+    .grid-container-nosotros .presentacion-nosotros {
+      background-image: url("./../assets/dog-cat-prairie.jpg"); }
+    .grid-container-nosotros .contenedor-compromiso .compromiso {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center; }
+      .grid-container-nosotros .contenedor-compromiso .compromiso .quality {
+        width: 350px;
+        height: 350px; }
+    .grid-container-nosotros .contenedor-equipo .titulo-equipo {
+      font-size: 1.875rem;
+      text-align: center; }
+    .grid-container-nosotros .contenedor-equipo .compromiso {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center; }
+      .grid-container-nosotros .contenedor-equipo .compromiso .foto-equipo {
+        width: 280px;
+        height: 300px;
+        padding: 0px;
+        margin-bottom: 1.875rem; }
   .grid-container-servicios {
     width: 100%;
     display: grid;
     grid-template-columns: 100%;
-    /* grid-template-rows: 20px 200px 300px 300px 40px ; */
     grid-template-rows: auto 230px auto auto auto;
     grid-template-areas: "header  " "presentacion-servicios " "intro-servicios " "detalle-servicios " "footer "; }
     .grid-container-servicios .detalle-servicios {
@@ -594,6 +620,12 @@ footer {
     /* grid-template-rows: 20px 200px 300px 300px 40px ; */
     grid-template-rows: auto 200px auto auto auto;
     grid-template-areas: "header  " "presentacion-planes " "intro-planes " "detalle-planes " "footer "; }
+    .grid-container-planes .detalle-planes {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+      .grid-container-planes .detalle-planes .card .card-body h3 {
+        text-align: center; }
     .grid-container-planes .img-planes {
       display: none; } }
 

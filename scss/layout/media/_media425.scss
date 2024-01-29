@@ -55,16 +55,20 @@ header {
       } 
 }
 h1{
-    font-size: 25px;
+    font-size: 30px;
     text-align: end;
+    margin-right: .625rem;
 }
 h2 {
     /* font-weight: bold; */
-    font-size: 20px;
+    font-size: 28px;
     text-align: center; 
     padding: 20px 0px 5px 0px;
 }
-
+h3{
+    font-size: 25px;
+    text-align: center; 
+}
 
 .parrafo-nosotros {
     font-size: 20px;
@@ -141,8 +145,8 @@ h2 {
                padding-bottom: 1.25rem;
                   .item {
                       .en-adopcion {
-                          width: 18.75rem;
-                          height: 18.75rem;
+                          width: 15.625rem;
+                          height: 15.625rem;
                           border-radius: 150px ;
                       }
                   } 
@@ -161,14 +165,59 @@ h2 {
         "presentacion-nosotros"
         "contenedor-compromiso"
         "contenedor-equipo"       
-        "footer ";   
+        "footer ";  
+
+        .presentacion-nosotros {
+            background-image: url("./../assets/dog-cat-prairie.jpg") ;
+        }
+        
+        .contenedor-compromiso {                
+            .compromiso {
+                display: flex;
+                flex-direction: column;
+                align-items: center; 
+                justify-content: center; 
+                .quality{
+                    width: 350px;
+                    height: 350px; 
+                    // padding: 30px;             
+                   }
+            }
+        } 
+        .contenedor-equipo {
+            .titulo-equipo{
+                font-size: map-get($font-size, h3);
+                text-align: center;
+            }
+            // background-color: map-get($colors, fondoDurazno); 
+            // grid-area: contenedor-equipo ;
+            // display: flex;
+            // flex-direction: column;
+            // .titulo-equipo {
+            //      font-size: 30px;
+            //      text-align: left; 
+            //      padding-left: 20px; 
+            //      padding-top: 30px;   
+            // }
+            .compromiso {
+                display: flex;
+                flex-direction: column;
+                align-items: center; 
+                justify-content: center; 
+                .foto-equipo {
+                    width: 280px;
+                    height: 300px;
+                     padding: 0px;
+                    margin-bottom: 1.875rem;
+                   }
+            }         
+        }           
 }
  
   .grid-container-servicios {
     width: 100%;
     display: grid;
-    grid-template-columns: 100%;
-    /* grid-template-rows: 20px 200px 300px 300px 40px ; */
+    grid-template-columns: 100%;    
     grid-template-rows: auto 230px auto auto auto ;
     grid-template-areas:
         "header  "
@@ -219,6 +268,19 @@ h2 {
         "intro-planes "
         "detalle-planes "
         "footer ";
+
+        .detalle-planes {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+               .card{
+                 .card-body {
+                     h3{
+                         text-align: center;
+                     }
+                 }
+               }
+             }
 
         .img-planes {
             display: none;
