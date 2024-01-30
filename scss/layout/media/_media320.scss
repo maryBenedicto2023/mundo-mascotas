@@ -21,9 +21,9 @@
     }
     h2 {
         /* font-weight: bold; */
-        font-size: 28px;
+        font-size: 25px;
         text-align: center; 
-        padding: 20px 0px 5px 0px;
+        padding: 20px 20px 0px 20px; 
     }
     h3{
         font-size: 25px;
@@ -63,9 +63,9 @@
         } 
         
     }
-    h1{
-        font-size: .9375rem;
-    }
+    // h1{
+    //     font: size 25px;
+    // }
 
     .grid-container-index {
         width: 100%;
@@ -112,5 +112,38 @@
          }
             
     }
+    .grid-container-nosotros {      
+            .contenedor-compromiso {                
+                .compromiso {
+                    .parrafo-nosotros{
+                        font-size:15px ;
+                        padding-bottom: 0rem;
+                    }
+                    .quality{
+                        width: 250px;
+                        height: 250px;   
+                        padding: .3125rem;           
+                       }
+                }
+            } 
+            .contenedor-equipo {
+                .titulo-equipo{
+                    font-size: 20px;                   
+                }
+                .compromiso {
+                    .parrafo-nosotros {
+                        font-size: 15px;
+                        text-align: center;
+                        padding: 30px;
+                        
+                    }
+                    .foto-equipo {
+                        width: 230px;
+                        height: 250px;                       
+                    }
+                }         
+            }           
+    }
+     
     
 }

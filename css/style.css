@@ -650,9 +650,9 @@ footer {
     margin-right: .625rem; }
   h2 {
     /* font-weight: bold; */
-    font-size: 28px;
+    font-size: 25px;
     text-align: center;
-    padding: 20px 0px 5px 0px; }
+    padding: 20px 20px 0px 20px; }
   h3 {
     font-size: 25px;
     text-align: center; }
@@ -672,8 +672,6 @@ footer {
     footer .bloque-redes .redes .item-redes {
       width: 40px;
       height: 40px; }
-  h1, h2, h3 {
-    font-size: .9375rem; }
   .grid-container-index {
     width: 100%;
     display: grid;
@@ -695,4 +693,20 @@ footer {
       .grid-container-index .contenedor-adopciones .items-adopcion .item .en-adopcion {
         width: 12.5rem;
         height: 12.5rem;
-        border-radius: 150px; } }
+        border-radius: 150px; }
+  .grid-container-nosotros .contenedor-compromiso .compromiso .parrafo-nosotros {
+    font-size: 15px;
+    padding-bottom: 0rem; }
+  .grid-container-nosotros .contenedor-compromiso .compromiso .quality {
+    width: 250px;
+    height: 250px;
+    padding: .3125rem; }
+  .grid-container-nosotros .contenedor-equipo .titulo-equipo {
+    font-size: 20px; }
+  .grid-container-nosotros .contenedor-equipo .compromiso .parrafo-nosotros {
+    font-size: 15px;
+    text-align: center;
+    padding: 30px; }
+  .grid-container-nosotros .contenedor-equipo .compromiso .foto-equipo {
+    width: 230px;
+    height: 250px; } }
