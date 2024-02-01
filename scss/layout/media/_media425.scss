@@ -5,6 +5,7 @@
 header {
     justify-content: center;
     .navbar { 
+        background-color: violet;
         flex-direction: column;         
         .pow {
             padding: 0px;
@@ -262,11 +263,26 @@ h3{
         "detalle-planes "
         "footer ";
 
+        .intro-planes {
+            h2{
+               font-size: 25px;   
+               padding-left: 1.875rem;
+                padding-right:30px;
+            }
+            .parrafo-nosotros {
+                font-size: 18px;
+                padding-left: 20px;
+                padding-right:20px;
+            }
+            
+         }   
         .detalle-planes {
             flex-direction: column;
             justify-content: center;
             align-items: center;
                .card{
+                width: 320px;
+                margin: 20px;
                  .card-body {
                      h3{
                          text-align: center;

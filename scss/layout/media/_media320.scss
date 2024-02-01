@@ -1,6 +1,7 @@
 @media (max-width: 320px)  {
     header {
-        .navbar {               
+        .navbar {   
+            background-color: aquamarine;            
             .pow {                
                 font-size: 25px;
            }
@@ -144,6 +145,34 @@
                 }         
             }           
     }
-     
+    .grid-container-planes {   
+       
+       
+        .intro-planes {
+           h2{
+              font-size: 1.25rem;              
+           }
+           .parrafo-nosotros{
+                  font-size: .9375rem;
+           }
+        }   
+        .detalle-planes { 
+            .card  {
+                margin-top:20px;
+                margin-bottom: 20px;
+                 width: 250px;  
+                 .card-body{
+                    .card-text{
+                        font-weight: bold;
+                        padding: 1.5625rem;
+                        font-size: .9375rem;
+                    }
+                   
+                 } 
+             }
+            
+        }
+    
+    }
     
 }

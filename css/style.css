@@ -16,10 +16,7 @@ h2 {
 h3 {
   font-size: 1.875rem;
   text-align: center;
-  padding: 15px; }
-
-.card-text {
-  font-weight: bold; }
+  padding: 10px; }
 
 .parrafo-nosotros {
   font-size: 25px;
@@ -86,7 +83,7 @@ body {
 .grid-container-planes {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 80px 450px 400px 650px 250px;
+  grid-template-rows: 80px 450px 400px auto 250px;
   justify-content: none;
   align-content: none;
   grid-template-areas: "header header header " "presentacion-planes presentacion-planes presentacion-planes" "intro-planes intro-planes img-planes" "detalle-planes detalle-planes  detalle-planes " "footer footer footer "; }
@@ -129,6 +126,10 @@ body {
       .grid-container-planes .detalle-planes .card .card-body {
         text-align: center;
         background-color: #F4DFB6; }
+        .grid-container-planes .detalle-planes .card .card-body .card-text {
+          font-weight: bold;
+          padding: 1.5625rem;
+          font-size: 1.25rem; }
         .grid-container-planes .detalle-planes .card .card-body div .img-star {
           width: 40px;
           height: 40px; }
@@ -288,7 +289,7 @@ body {
       display: grid;
       grid-template-columns: repeat(4, 15%);
       grid-template-rows: repeat(3, 300px);
-      grid-template-areas: "img-4 img-4 img-6 img-6" "img-1 img-1 img-3 img-3" "img-1 img-1 img-7 img-7";
+      grid-template-areas: "img-4 img-4 img-6 img-6" "img-7 img-7 img-3 img-3" "img-7 img-7 img-1 img-1";
       align-content: center;
       justify-content: center;
       gap: 20px; }
@@ -425,6 +426,11 @@ footer {
     gap: 2.5rem;
     padding-right: 30px;
     margin-left: 60px; }
+  .parrafo-nosotros {
+    font-size: 20px;
+    text-align: left;
+    padding: 0px 30px 25px 35px;
+    line-height: 40px; }
   .grid-container-index .contenedor-servicios .contenedor-cards {
     padding-left: .9375rem;
     padding-right: .9375rem;
@@ -434,7 +440,15 @@ footer {
       height: 400px; }
       .grid-container-index .contenedor-servicios .contenedor-cards .card .img-card {
         width: 280px;
-        padding: 5px 0px 35px 0px; } }
+        padding: 5px 0px 35px 0px; }
+  .grid-container-planes .detalle-planes .card {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 230px; }
+    .grid-container-planes .detalle-planes .card .card-body .card-text {
+      padding: 15px;
+      font-size: 1.25rem;
+      font-weight: bold; } }
 
 @media (max-width: 768px) {
   .grid-container-servicios {
@@ -476,6 +490,7 @@ footer {
   header {
     justify-content: center; }
     header .navbar {
+      background-color: violet;
       flex-direction: column; }
       header .navbar .pow {
         padding: 0px;
@@ -628,22 +643,35 @@ footer {
     /* grid-template-rows: 20px 200px 300px 300px 40px ; */
     grid-template-rows: auto 200px auto auto auto;
     grid-template-areas: "header  " "presentacion-planes " "intro-planes " "detalle-planes " "footer "; }
+    .grid-container-planes .intro-planes h2 {
+      font-size: 25px;
+      padding-left: 1.875rem;
+      padding-right: 30px; }
+    .grid-container-planes .intro-planes .parrafo-nosotros {
+      font-size: 18px;
+      padding-left: 20px;
+      padding-right: 20px; }
     .grid-container-planes .detalle-planes {
       flex-direction: column;
       justify-content: center;
       align-items: center; }
-      .grid-container-planes .detalle-planes .card .card-body h3 {
-        text-align: center; }
+      .grid-container-planes .detalle-planes .card {
+        width: 320px;
+        margin: 20px; }
+        .grid-container-planes .detalle-planes .card .card-body h3 {
+          text-align: center; }
     .grid-container-planes .img-planes {
       display: none; } }
 
 @media (max-width: 320px) {
-  header .navbar .pow {
-    font-size: 25px; }
-  header .navbar ul {
-    gap: 2px; }
-    header .navbar ul li a {
-      font-size: 20px; }
+  header .navbar {
+    background-color: aquamarine; }
+    header .navbar .pow {
+      font-size: 25px; }
+    header .navbar ul {
+      gap: 2px; }
+      header .navbar ul li a {
+        font-size: 20px; }
   h1, h2, h3 {
     font-size: 30px;
     text-align: end;
@@ -709,4 +737,16 @@ footer {
     padding: 30px; }
   .grid-container-nosotros .contenedor-equipo .compromiso .foto-equipo {
     width: 230px;
-    height: 250px; } }
+    height: 250px; }
+  .grid-container-planes .intro-planes h2 {
+    font-size: 1.25rem; }
+  .grid-container-planes .intro-planes .parrafo-nosotros {
+    font-size: .9375rem; }
+  .grid-container-planes .detalle-planes .card {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 250px; }
+    .grid-container-planes .detalle-planes .card .card-body .card-text {
+      font-weight: bold;
+      padding: 1.5625rem;
+      font-size: .9375rem; } }
