@@ -1,0 +1,688 @@
+@media (max-width: 1024px)  {
+    header {
+        .navbar{                 
+            .logo-nav {                
+                img{                   
+                     margin-left: 40px; 
+                }
+            }
+            .pow {               
+                font-size: 30px;                
+            }
+            ul{              
+                gap: 2.5rem;
+                padding-right: 30px; 
+                margin-left: 60px;
+            }
+        }
+    }
+    .parrafo-nosotros {
+        font-size:20px;
+        text-align: left;
+       padding: 0px 30px 25px 35px;
+        line-height: 40px;        
+    }
+    .grid-container-index { 
+        .contenedor-servicios {       
+          .contenedor-cards{ 
+            padding-left: .9375rem;
+            padding-right: .9375rem;  
+            padding-bottom: .9375rem ;       
+              .card{
+                  width: 310px;
+                   height: 400px;                       
+                  .img-card {
+                      width: 280px;
+                      padding: 5px 0px 35px 0px;                  
+                    }          
+               }
+            }                  
+        }
+    }
+    
+    .grid-container-planes {     
+        .detalle-planes {           
+            .card  {
+                margin-top:15px;
+                margin-bottom: 15px;
+                 width: 230px;  
+
+                 .card-body{
+                    .card-text{
+                        padding: 15px;
+                        font-size: 1.25rem;
+                        font-weight: bold;
+                    }
+                   
+                } 
+            } 
+        }
+            
+    }
+    
+}
+
+
+@media (max-width: 768px)  {
+    footer{
+        .brand-footer{
+            .pow {
+                display: none;
+            }
+        }       
+    }
+    header {
+        .navbar {   
+            background-color: chartreuse;        
+            .logo-nav {
+                img{
+                    width: 80px;
+                     margin-left: 15px;  
+                }
+            }
+            .pow {               
+                font-size: 1.25rem;
+            }
+            ul{                            
+                gap: 2.5rem;
+                margin-right:20px; 
+                margin-left: 90px;
+                li {
+                    a{
+                       font-size: .9375rem;
+                }
+            }
+        }
+    }
+    }
+    .grid-container-servicios {
+        display: grid;
+        grid-template-columns: repeat(3, 33%);
+        grid-template-rows:70px 290px 250px 560px  180px ;
+        grid-template-areas:
+            "header header header "
+            "presentacion-servicios presentacion-servicios presentacion-servicios"
+            "intro-servicios intro-servicios img-servicios"
+            "detalle-servicios detalle-servicios  detalle-servicios "
+            "footer footer footer ";
+    }
+    .grid-container-index { 
+        grid-template-rows:90px 350px 500px 300px 250px;
+        .contenedor-servicios {       
+          .contenedor-cards{ 
+            // padding-left: .9375rem;
+            // padding-right: .9375rem;  
+             padding-bottom:5px ;       
+              .card{
+                  width: 220px;
+                   height: 350px;                       
+                  .img-card {
+                      width: 200px;
+                      padding: 5px 0px 35px 0px;                  
+                    }          
+               }
+            }                  
+        }
+        .contenedor-adopciones{            
+            .items-adopcion{
+            //    @include flex(row,space-evenly,center, none);  
+                  .item {
+                      .en-adopcion {
+                          width: 9.375rem;
+                          height: 9.375rem;
+                          border-radius: 150px ;
+                      }
+                      .btn-ver-mas{
+                        .btn-adopciones {
+                            align-self: center;
+                        }                        
+                      }
+                  } 
+            }
+         }
+    } 
+    
+    .grid-container-planes {
+            display: grid;
+            width: 100%;
+            grid-template-columns: repeat(2, 50%);
+            grid-template-rows:70px 290px 250px auto  180px ;
+            grid-template-areas:
+                "header header "
+                "presentacion-planes presentacion-planes "
+                "intro-planes img-planes"
+                "detalle-planes detalle-planes  "
+                "footer footer ";
+    
+                .img-planes {
+                    width: 100%;
+                    height: 100%;  
+                    img {
+                        width: 100%;
+                        height: 100%;                      
+                    }                      
+                }
+                .detalle-planes {
+                    width: 100%;
+                    display: grid;
+                    grid-template-columns: 50% 50%;
+                    grid-template-rows: auto auto;
+                    grid-template-areas: 
+                    "child-1 child-2"
+                    "child-3 child-4"
+                    ;
+                    .detalle-planes :first-child {
+                        grid-area: child-1;
+                      }
+                      
+                      .detalle-planes :nth-child(2) {
+                          grid-area: child-2;
+                          
+                      }
+                      .detalle-planes :nth-child(3) {                       
+                          grid-area: child-3;
+                      }
+                      .detalle-planes :last-child {                      
+                          grid-area: child-4;
+                      }
+    
+                      .card {
+                             width: 320px;
+                            //  margin-top:55px;
+                            //  margin-bottom: 55px; 
+                                       
+                              justify-self: center;
+                              align-self: center;
+                        }
+    
+    
+                      
+    
+                }
+    
+        }
+    
+       
+  
+   
+}
+@media (max-width: 425px)  {
+
+
+    header {
+        justify-content: center;
+        .navbar { 
+            background-color: violet;
+            flex-direction: column;         
+            .pow {
+                padding: 0px;
+                font-size: 35px;
+           }
+           ul{ 
+            gap: 3px;
+            flex-direction: column; 
+            margin: 0px;
+            padding: 0px;
+            justify-self: center;
+            padding: 20px; 
+            li {
+                text-align: center;
+                a{
+                    text-decoration: none;                
+                    font-size: 25px;
+                    font-weight: bold; 
+                   justify-self: center;    
+                  } 
+                }   
+           } 
+        }
+      }
+      footer {
+        display: block;
+        justify-content: center;
+        .brand-footer{
+            justify-content: center;
+            .logo-footer {  
+                width: 100px;                    
+            }    
+            .pow {
+                display: none;
+            }
+        }
+        .bloque-info-contacto {
+            .info-contacto{    
+               justify-content: center;           
+            } 
+        }    
+        .bloque-redes {    
+            padding: 15px;
+            margin-bottom: 20px; 
+            .seguinos {                   
+                font-size: 25px;
+            }                  
+          } 
+    }
+    h1{
+        font-size: 30px;
+        text-align: end;
+        margin-right: .625rem;
+    }
+    h2 {
+        /* font-weight: bold; */
+        font-size: 28px;
+        text-align: center; 
+        padding: 20px 0px 5px 0px;
+    }
+    h3{
+        font-size: 25px;
+        text-align: center; 
+    }
+    
+    .parrafo-nosotros {
+        font-size: 20px;
+        text-align:center;
+        padding: 15px;
+        line-height: 1.25rem;       
+    }
+     .grid-container-index {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 100%;
+        /* grid-template-rows: 20px 200px 300px 300px 40px ; */
+        grid-template-rows: auto 220px auto auto auto ;
+        grid-template-areas:
+            "header  "
+            "presentacion"
+            "contenedor-servicios"
+            "contenedor-adopciones "       
+            "footer ";  
+    
+            .presentacion {            
+                .textos-presentacion{
+                    margin-right: 1.25rem;
+                    display: flex;
+                    flex-direction: column;
+                    justify-items: end;
+                    .parrafo-presentacion{
+                        font-size: .625rem;
+                    }
+                }
+            }
+            .contenedor-servicios {  
+                .contenedor-cards{
+                  flex-direction: column;
+                  align-items:center;
+                  justify-items: center;              
+                  padding-bottom: 1.25rem;             
+                    .card{
+                        width: 330px;
+                         height: 400px;  
+                        margin: .9375rem;
+                                          
+                        .img-card {
+                            width: 270px;
+                            // padding: 5px 0px 35px 0px;                  
+                          }          
+                     }
+                  }                  
+              } 
+              .contenedor-adopciones{ 
+                h3{
+                    font-size: 1.25rem;
+                    text-align: center;
+                }          
+                .items-adopcion{
+                   flex-direction: column;
+                   align-items:center;
+                   justify-items: center;
+                   padding-bottom: 1.25rem;
+                      .item {
+                          .en-adopcion {
+                              width: 15.625rem;
+                              height: 15.625rem;
+                              border-radius: 150px ;
+                          }
+                      } 
+                }
+             }
+    }
+    
+    .grid-container-nosotros {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 100%;
+        /* grid-template-rows: 20px 200px 300px 300px 40px ; */
+        grid-template-rows: auto 200px auto auto auto ;
+        grid-template-areas:
+            "header  "
+            "presentacion-nosotros"
+            "contenedor-compromiso"
+            "contenedor-equipo"       
+            "footer ";  
+    
+            .presentacion-nosotros {
+                background-image: url("./../assets/dog-cat-prairie.jpg") ;
+            }
+            
+            .contenedor-compromiso {                
+                .compromiso {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center; 
+                    justify-content: center; 
+                    .quality{
+                        width: 350px;
+                        height: 350px; 
+                        // padding: 30px;             
+                       }
+                }
+            } 
+            .contenedor-equipo {
+                .titulo-equipo{
+                    font-size: map-get($font-size, h3);
+                    text-align: center;
+                }
+                .compromiso {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center; 
+                    justify-content: center; 
+                    .foto-equipo {
+                        width: 280px;
+                        height: 300px;
+                         padding: 0px;
+                        margin-bottom: 1.875rem;
+                       }
+                }         
+            }           
+    }
+     
+      .grid-container-servicios {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 100%;    
+        grid-template-rows: auto 230px auto auto auto ;
+        grid-template-areas:
+            "header  "
+            "presentacion-servicios "
+            "intro-servicios "
+            "detalle-servicios "
+            "footer ";
+    
+            .detalle-servicios {
+               flex-direction: column;
+               justify-content: center;
+               align-items: center;
+                  .card{
+                    .card-body {
+                        h3{
+                            text-align: center;
+                        }
+                    }
+                  }
+                }
+    }
+    
+    .grid-container-adopciones {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 100%;
+        /* grid-template-rows: 20px 200px 300px 300px 40px ; */
+        grid-template-rows: auto 200px auto auto auto ;
+        grid-template-areas:
+            "header  "
+            "presentacion-adopciones "
+            "adopciones-ofrecidas "       
+            "footer ";
+            .adopciones-ofrecidas{
+                .grid-galeria-adopciones {           
+                    padding: 20px;
+                    width: 100%;           
+                    grid-template-columns: 100%;
+                    grid-template-rows: auto;
+                    grid-template-areas:           
+                        "img-4 "
+                        "img-6 "
+                        "img-1 "
+                        "img-3 "
+                        "img-7 "
+                        ;           
+                       align-content: center;
+                       justify-content: center;
+                    //    gap: 20px;
+               
+                }
+        }
+    
+            }
+            
+    
+    .grid-container-planes {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 100%;
+        /* grid-template-rows: 20px 200px 300px 300px 40px ; */
+        grid-template-rows: auto 200px auto auto auto ;
+        grid-template-areas:
+            "header  "
+            "presentacion-planes "
+            "intro-planes "
+            "detalle-planes "
+            "footer ";
+    
+            .intro-planes {
+                h2{
+                   font-size: 25px;   
+                   padding-left: 1.875rem;
+                    padding-right:30px;
+                }
+                .parrafo-nosotros {
+                    font-size: 18px;
+                    padding-left: 20px;
+                    padding-right:20px;
+                }
+                
+             }   
+            .detalle-planes {
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                   .card{
+                    width: 320px;
+                    margin: 20px;
+                     .card-body {
+                         h3{
+                             text-align: center;
+                         }
+                     }
+                   }
+                 }
+    
+            .img-planes {
+                display: none;
+            }
+    
+    }
+    }
+    @media (max-width: 320px)  {
+        header {
+            .navbar {   
+                background-color: aquamarine;            
+                .pow {                
+                    font-size: 25px;
+               }
+               ul{ 
+                gap: 2px;           
+                li {
+                    a{                               
+                        font-size: 20px; 
+                      } 
+                    }   
+               } 
+            }
+        } 
+        h1{
+            font-size: 30px;
+            text-align: end;
+            margin-right: .625rem;
+        }
+        h2 {
+            /* font-weight: bold; */
+            font-size: 25px;
+            text-align: center; 
+            padding: 20px 20px 0px 20px; 
+        }
+        h3{
+            font-size: 25px;
+            text-align: center; 
+        }
+    
+        footer {  
+            flex-direction: column; 
+            justify-content: center;       
+            .bloque-info-contacto {           
+                .info-contacto{   
+                //     flex-direction: column; 
+                    justify-content: center; 
+                    align-items: center;          
+                   .info {
+                    font-size: 15px;             
+                    // font-weight: bold;
+                    // padding-top: 5px;
+                    // padding-left: 3px;
+                    }                
+                    .item-info{
+                    width: 20px;
+                    height: 20px;
+                    }          
+                } 
+            }    
+            .bloque-redes {               
+                .seguinos {                   
+                    font-size: 20px;
+                }  
+                .redes{                  
+                        .item-redes{
+                           width: 40px;
+                           height: 40px;
+                         }         
+                    }                
+            } 
+            
+        }
+        // h1{
+        //     font: size 25px;
+        // }
+    
+        .grid-container-index {
+            width: 100%;
+            display: grid;
+            grid-template-columns: 100%;
+            /* grid-template-rows: 20px 200px 300px 300px 40px ; */
+            grid-template-rows: auto 220px auto auto auto ;
+            grid-template-areas:
+                "header  "
+                "presentacion"
+                "contenedor-servicios"
+                "contenedor-adopciones "       
+                "footer ";  
+        
+               .contenedor-servicios {
+                  .contenedor-cards{
+                     .card {
+                        width: 250px;
+                         height: 320px;  
+                        margin: .625rem;
+                                          
+                        .img-card {
+                            width: 220px;
+                            // padding: 5px 0px 35px 0px;                  
+                          }   
+                     }
+                  }
+               }
+               .contenedor-adopciones{ 
+                h3{
+                    font-size: 1.25rem;
+                    text-align: center;
+                }          
+                .items-adopcion{
+                                  padding-bottom: 1.25rem;
+                      .item {
+                          .en-adopcion {
+                              width: 12.5rem;
+                              height: 12.5rem;
+                              border-radius: 150px ;
+                          }
+                      } 
+                }
+             }
+                
+        }
+        .grid-container-nosotros {      
+                .contenedor-compromiso {                
+                    .compromiso {
+                        .parrafo-nosotros{
+                            font-size:15px ;
+                            padding-bottom: 0rem;
+                        }
+                        .quality{
+                            width: 250px;
+                            height: 250px;   
+                            padding: .3125rem;           
+                           }
+                    }
+                } 
+                .contenedor-equipo {
+                    .titulo-equipo{
+                        font-size: 20px;                   
+                    }
+                    .compromiso {
+                        .parrafo-nosotros {
+                            font-size: 15px;
+                            text-align: center;
+                            padding: 30px;
+                            
+                        }
+                        .foto-equipo {
+                            width: 230px;
+                            height: 250px;                       
+                        }
+                    }         
+                }           
+        }
+        .grid-container-planes {   
+           
+           
+            .intro-planes {
+               h2{
+                  font-size: 1.25rem;              
+               }
+               .parrafo-nosotros{
+                      font-size: .9375rem;
+               }
+            }   
+            .detalle-planes { 
+                .card  {
+                    margin-top:20px;
+                    margin-bottom: 20px;
+                     width: 250px;  
+                     .card-body{
+                        .card-text{
+                            font-weight: bold;
+                            padding: 1.5625rem;
+                            font-size: .9375rem;
+                        }
+                       
+                     } 
+                 }
+                
+            }
+        
+        }
+        
+    }    
+
+
+
+

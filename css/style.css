@@ -557,8 +557,10 @@ footer {
       .grid-container-index .presentacion .textos-presentacion .parrafo-presentacion {
         font-size: .625rem; }
     .grid-container-index .contenedor-servicios .contenedor-cards {
+      width: 100%;
       flex-direction: column;
       align-items: center;
+      justify-content: center;
       justify-items: center;
       padding-bottom: 1.25rem; }
       .grid-container-index .contenedor-servicios .contenedor-cards .card {
