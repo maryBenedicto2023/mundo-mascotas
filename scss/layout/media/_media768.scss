@@ -1,4 +1,9 @@
-@media (max-width: 768px)  {
+@media (max-width: 820px)  {
+    header {
+        .navbar {
+            background-color:crimson;
+        }
+    } 
     .grid-container-servicios {
         display: grid;
         grid-template-columns: repeat(3, 33%);

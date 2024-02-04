@@ -1,6 +1,7 @@
 @media (max-width: 1024px)  {
     header {
-        .navbar{                 
+        .navbar{   
+            background-color: yellow;              
             .logo-nav {                
                 img{                   
                      margin-left: 40px; 
@@ -59,7 +60,17 @@
         }
             
     }
-    
+
+
+    .grid-container-servicios { 
+        width: 100%;   
+        @include grid( repeat(3, 1fr),80px 450px 350px 700px  250px , none, none,  
+            "header header header "
+            "presentacion-servicios presentacion-servicios presentacion-servicios"
+            "intro-servicios intro-servicios img-servicios"
+            "detalle-servicios detalle-servicios  detalle-servicios "
+            "footer footer footer "); 
+    }    
 }
 
 

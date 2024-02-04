@@ -16,10 +16,9 @@
         }
     } 
     h1{
-        font-size: 30px;
-        text-align: end;
-        margin-right: .625rem;
+        font-size:18px;     
     }
+    
     h2 {
         /* font-weight: bold; */
         font-size: 25px;
@@ -80,7 +79,21 @@
             "contenedor-servicios"
             "contenedor-adopciones "       
             "footer ";  
+            .presentacion {            
+                .textos-presentacion{
+                    justify-items: center;      
+                    padding-right: 10px;
+                    padding-left: 18px;
+                }
+            }
     
+            // .presentacion {            
+            //     .textos-presentacion{                 
+            //         .parrafo-presentacion{
+            //             font-size: .625rem;                        
+            //         }
+            //     }
+            // }
            .contenedor-servicios {
               .contenedor-cards{
                  .card {
@@ -145,16 +158,14 @@
                 }         
             }           
     }
-    .grid-container-planes {   
-       
-       
+    .grid-container-planes {          
         .intro-planes {
            h2{
               font-size: 1.25rem;              
            }
            .parrafo-nosotros{
                   font-size: .9375rem;
-           }
+                                 }
         }   
         .detalle-planes { 
             .card  {
@@ -165,6 +176,48 @@
                     .card-text{
                         font-weight: bold;
                         padding: 1.5625rem;
+                        font-size: .9375rem;
+                    }
+                   
+                 } 
+             }
+            
+        }
+    
+    }
+
+    .grid-container-servicios { 
+        //.presentacion-servicios {
+        //     h1{
+        //         font-size:25px;       
+        //         // margin-right: 0px;
+        //         margin-left: 100px;
+        //         // text-align: right;
+        //         //padding-left: 12.5rem;
+        //     }
+        // }
+        .intro-servicios {
+            h2{
+               font-size: 1.25rem;              
+            }
+            .parrafo-nosotros{
+                   font-size: .9375rem;
+                   padding-left: 25px;
+                   padding-right: 1.5625rem;
+            }
+         }           
+        .detalle-servicios { 
+            .card  {
+                margin-top:10px;
+                margin-bottom: 10px;
+                 width: 230px;  
+                 .card-body{
+                    .card-title {
+                        font-size: 1.25rem;
+                    }
+                    .card-text{
+                        font-weight:normal;
+                        padding: 1.25rem;
                         font-size: .9375rem;
                     }
                    

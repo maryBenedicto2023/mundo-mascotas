@@ -14,10 +14,12 @@
                .textos-presentacion {
                 display: flex;
                 flex-direction: column;
-                align-items: center;       
+                align-items: left; 
+                justify-content: right;      
                 margin-right: 80px;
                      .parrafo-presentacion{   
-                    font-size: 1.875rem    
+                    font-size: 1.875rem;
+                    font-weight: bold;    
                     }
             } 
           }
