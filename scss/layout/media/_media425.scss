@@ -6,11 +6,17 @@ header {
     justify-content: center;
     .navbar { 
         background-color: violet;
-        flex-direction: column;         
+        flex-direction: column;
+       justify-items: center;  
         .pow {
             padding: 0px;
             font-size: 35px;
        }
+       .logo-nav {
+        img{            
+             margin-left: 0px;  
+        }
+    }
        ul{ 
         gap: 3px;
         flex-direction: column; 
@@ -253,7 +259,7 @@ h3{
               .card{
                 margin-top:20px;
                 margin-bottom: 20px;
-                width: 325px; 
+                width: 350px; 
                 .card-body {
                     h3{
                         text-align: center;
