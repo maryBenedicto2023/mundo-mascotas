@@ -52,7 +52,7 @@
                    }                     
                   .img-card {
                       width: 280px;
-                      padding: 5px 0px 35px 0px;                  
+                     // padding: 5px 0px 35px 0px;                  
                     }          
                }
             }                  
@@ -87,13 +87,29 @@
 
     .grid-container-servicios { 
         width: 100%;   
-        @include grid( repeat(3, 1fr),80px 450px 350px 700px  250px , none, none,  
+        @include grid( repeat(3, 1fr),80px 450px 350px auto  250px , none, none,  
             "header header header "
             "presentacion-servicios presentacion-servicios presentacion-servicios"
             "intro-servicios intro-servicios img-servicios"
             "detalle-servicios detalle-servicios  detalle-servicios "
-            "footer footer footer "); 
-    }    
+            "footer footer footer ");
+            .detalle-servicios {
+                .card  {
+                  margin-top:20px;
+                  margin-bottom: 20px;
+                  width: 290px; 
+                }
+        }  
+
+    }   
+    .grid-container-nosotros {    
+        @include grid( repeat(3, 1fr),80px 450px auto auto 250px , none, none,  
+            "header header header "
+            "presentacion-nosotros presentacion-nosotros presentacion-nosotros"
+            "contenedor-compromiso contenedor-compromiso contenedor-compromiso"
+            "contenedor-equipo contenedor-equipo  contenedor-equipo "
+            "footer footer footer ");
+        } 
 }
 
 @media (max-width: 950px)  {
@@ -138,7 +154,7 @@
                        height: 350px;                       
                       .img-card {
                           width: 230px;
-                          padding: 5px 0px 35px 0px;                  
+                         // padding: 5px 0px 35px 0px;                  
                         }          
                    }
                 }                  
@@ -158,7 +174,21 @@
                 }
              }
         }
-
+        .grid-container-servicios {    
+            @include grid( repeat(3, 1fr),80px 350px 300px auto  250px , none, none,  
+            "header header header "
+            "presentacion-servicios presentacion-servicios presentacion-servicios"
+            "intro-servicios intro-servicios img-servicios"
+            "detalle-servicios detalle-servicios  detalle-servicios "
+            "footer footer footer ");
+                .detalle-servicios {
+                        .card  {
+                          margin-top:20px;
+                          margin-bottom: 20px;
+                          width: 265px; 
+                        }
+                }      
+        }
 }
 
 
