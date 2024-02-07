@@ -15,12 +15,7 @@
         padding-right: 40px;
         line-height: 35px;        
     }
-    header {
-        .navbar {
-            background-color:crimson;
-        }
-    } 
-
+    
     .grid-container-index { 
     @include grid (1fr 1fr 1fr,90px 450px 600px 450px 250px, none, none,"header header header" 
     "presentacion presentacion presentacion"
@@ -88,19 +83,13 @@
                     } 
               }
            }
-}     
-    // .grid-container-servicios {
-    //     display: grid;
-    //     grid-template-columns: repeat(3, 33%);
-    //     grid-template-rows:70px 290px 250px 560px  180px ;
-    //     grid-template-areas:
-    //         "header header header "
-    //         "presentacion-servicios presentacion-servicios presentacion-servicios"
-    //         "intro-servicios intro-servicios img-servicios"
-    //         "detalle-servicios detalle-servicios  detalle-servicios "
-    //         "footer footer footer ";
-
-    // }
+} 
+   
+    .grid-container-servicios {
+        .presentacion-servicios {
+             background-image: url("./../assets/perro-servicios.jpg") ;
+         }
+}
 
     // .grid-container-servicios {
     //     display: grid;
@@ -277,7 +266,6 @@
    }
     header {
         .navbar {
-            background-color:blue;
             .pow {
               display: none;                 
              }

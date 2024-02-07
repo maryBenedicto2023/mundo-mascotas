@@ -1,7 +1,6 @@
 @media (max-width: 320px)  {
     header {
-        .navbar {   
-            background-color: aquamarine;            
+        .navbar {           
             .pow {                
                 font-size: 25px;
            }
@@ -63,10 +62,7 @@
         } 
         
     }
-    // h1{
-    //     font: size 25px;
-    // }
-
+    
     .grid-container-index {
         width: 100%;
         display: grid;
@@ -86,14 +82,7 @@
                     padding-left: 18px;
                 }
             }
-    
-            // .presentacion {            
-            //     .textos-presentacion{                 
-            //         .parrafo-presentacion{
-            //             font-size: .625rem;                        
-            //         }
-            //     }
-            // }
+
            .contenedor-servicios {
               .contenedor-cards{
                  .card {
@@ -187,15 +176,11 @@
     }
 
     .grid-container-servicios { 
-        //.presentacion-servicios {
-        //     h1{
-        //         font-size:25px;       
-        //         // margin-right: 0px;
-        //         margin-left: 100px;
-        //         // text-align: right;
-        //         //padding-left: 12.5rem;
-        //     }
-        // }
+        .presentacion-servicios {              
+            .textos-presentacion {                                   
+                  margin-right: 10px;
+              }             
+  }
         .intro-servicios {
             h2{
                font-size: 1.25rem;              
@@ -226,6 +211,13 @@
             
         }
     
+    }
+    .grid-container-adopciones {
+            .presentacion-adopciones {
+                .textos-presentacion{
+                    margin-right: 5px;
+                }
+            }   
     }
     
 }

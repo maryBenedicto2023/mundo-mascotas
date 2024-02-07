@@ -264,12 +264,12 @@ body {
   width: 100%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 80px 500px 1150px 250px;
+  grid-template-rows: 80px 450px 1150px 250px;
   justify-content: none;
   align-content: none;
   grid-template-areas: "header header header " "presentacion-adopciones presentacion-adopciones presentacion-adopciones" "adopciones-ofrecidas adopciones-ofrecidas adopciones-ofrecidas" "footer footer footer "; }
   .grid-container-adopciones .presentacion-adopciones {
-    background-image: url("./../assets/pets-group.jpg");
+    background-image: url("./../assets/perro-gato-adopciones.jpg");
     grid-area: presentacion-adopciones;
     background-size: cover;
     background-repeat: no-repeat;
@@ -490,7 +490,15 @@ footer {
     grid-template-rows: 80px 450px auto auto 250px;
     justify-content: none;
     align-content: none;
-    grid-template-areas: "header header header " "presentacion-nosotros presentacion-nosotros presentacion-nosotros" "contenedor-compromiso contenedor-compromiso contenedor-compromiso" "contenedor-equipo contenedor-equipo  contenedor-equipo " "footer footer footer "; } }
+    grid-template-areas: "header header header " "presentacion-nosotros presentacion-nosotros presentacion-nosotros" "contenedor-compromiso contenedor-compromiso contenedor-compromiso" "contenedor-equipo contenedor-equipo  contenedor-equipo " "footer footer footer "; }
+  .grid-container-adopciones .adopciones-ofrecidas {
+    width: 100%;
+    grid-area: adopciones-ofrecidas;
+    background-color: #F1EB90; }
+    .grid-container-adopciones .adopciones-ofrecidas .grid-galeria-adopciones {
+      padding-left: 10px;
+      padding-right: 10px;
+      width: 100%; } }
 
 @media (max-width: 950px) {
   header .navbar .logo-nav img {
@@ -549,8 +557,6 @@ footer {
     padding-left: 40px;
     padding-right: 40px;
     line-height: 35px; }
-  header .navbar {
-    background-color: crimson; }
   .grid-container-index {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -616,6 +622,8 @@ footer {
           width: 15.625rem;
           height: 15.625rem;
           border-radius: 150px; }
+  .grid-container-servicios .presentacion-servicios {
+    background-image: url("./../assets/perro-servicios.jpg"); }
   .grid-container-index {
     grid-template-rows: 90px 350px 450px 300px 250px; }
     .grid-container-index .contenedor-servicios .contenedor-cards {
@@ -690,18 +698,16 @@ footer {
     padding-left: 30px;
     padding-right: 30px;
     line-height: 20px; }
-  header .navbar {
-    background-color: blue; }
-    header .navbar .pow {
-      display: none; }
-    header .navbar ul {
-      gap: 1.25rem;
-      margin-top: 5px;
-      margin-bottom: 5px;
-      margin-right: 30px;
-      margin-left: 0px; }
-      header .navbar ul li a {
-        font-size: .9375rem; }
+  header .navbar .pow {
+    display: none; }
+  header .navbar ul {
+    gap: 1.25rem;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 30px;
+    margin-left: 0px; }
+    header .navbar ul li a {
+      font-size: .9375rem; }
   .grid-container-index {
     display: grid;
     grid-template-columns: 50% 50%;
@@ -813,7 +819,6 @@ footer {
   header {
     justify-content: center; }
     header .navbar {
-      background-color: violet;
       flex-direction: column;
       justify-items: center; }
       header .navbar .pow {
@@ -869,7 +874,6 @@ footer {
   h1 {
     font-size: 25px; }
   h2 {
-    /* font-weight: bold; */
     font-size: 28px;
     text-align: center;
     padding: 20px 0px 5px 0px; }
@@ -961,6 +965,8 @@ footer {
     grid-template-columns: 100%;
     grid-template-rows: auto 230px auto auto auto;
     grid-template-areas: "header  " "presentacion-servicios " "intro-servicios " "detalle-servicios " "footer "; }
+    .grid-container-servicios .presentacion-servicios .textos-presentacion {
+      margin-right: 40px; }
     .grid-container-servicios .detalle-servicios {
       flex-direction: column;
       justify-content: center;
@@ -979,6 +985,8 @@ footer {
     /* grid-template-rows: 20px 200px 300px 300px 40px ; */
     grid-template-rows: auto 200px auto auto auto;
     grid-template-areas: "header  " "presentacion-adopciones " "adopciones-ofrecidas "        "footer "; }
+    .grid-container-adopciones .presentacion-adopciones .textos-presentacion {
+      margin-right: 15px; }
     .grid-container-adopciones .adopciones-ofrecidas .grid-galeria-adopciones {
       padding: 20px;
       width: 100%;
@@ -1015,14 +1023,12 @@ footer {
       display: none; } }
 
 @media (max-width: 320px) {
-  header .navbar {
-    background-color: aquamarine; }
-    header .navbar .pow {
-      font-size: 25px; }
-    header .navbar ul {
-      gap: 2px; }
-      header .navbar ul li a {
-        font-size: 20px; }
+  header .navbar .pow {
+    font-size: 25px; }
+  header .navbar ul {
+    gap: 2px; }
+    header .navbar ul li a {
+      font-size: 20px; }
   h1 {
     font-size: 18px; }
   h2 {
@@ -1103,6 +1109,8 @@ footer {
       font-weight: bold;
       padding: 1.5625rem;
       font-size: .9375rem; }
+  .grid-container-servicios .presentacion-servicios .textos-presentacion {
+    margin-right: 10px; }
   .grid-container-servicios .intro-servicios h2 {
     font-size: 1.25rem; }
   .grid-container-servicios .intro-servicios .parrafo-nosotros {
@@ -1118,4 +1126,6 @@ footer {
     .grid-container-servicios .detalle-servicios .card .card-body .card-text {
       font-weight: normal;
       padding: 1.25rem;
-      font-size: .9375rem; } }
+      font-size: .9375rem; }
+  .grid-container-adopciones .presentacion-adopciones .textos-presentacion {
+    margin-right: 5px; } }

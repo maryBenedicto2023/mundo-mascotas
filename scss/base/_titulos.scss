@@ -14,17 +14,12 @@ h2{
 }
 
 h3{
-    // @extend h1;
     color: $blackColor;   
     font-weight: bold;  
     font-size: map-get($font-size, h3);
     text-align: center; 
     padding: 10px;    
 }
-// .card-text {
-//     font-weight: bold;
-//     font-size: 1.25rem;
-// }
 .parrafo-nosotros {
     font-size: 25px;
     text-align: left;
@@ -32,7 +27,3 @@ h3{
     padding-right: 50px;
     line-height: 40px;        
 }
-// .textos-presentacion {
-// ju
-
-// }

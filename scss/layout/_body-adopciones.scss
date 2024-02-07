@@ -1,13 +1,13 @@
 .grid-container-adopciones {
     width: 100%;
-    @include grid (repeat(3, 1fr),80px 500px 1150px  250px , none, none,
+    @include grid (repeat(3, 1fr),80px 450px 1150px  250px , none, none,
     "header header header "
     "presentacion-adopciones presentacion-adopciones presentacion-adopciones"
     "adopciones-ofrecidas adopciones-ofrecidas adopciones-ofrecidas"    
     "footer footer footer "); 
     
     .presentacion-adopciones {
-        background-image: url("./../assets/pets-group.jpg") ;
+        background-image: url("./../assets/perro-gato-adopciones.jpg") ;
         grid-area: presentacion-adopciones ;
         background-size:cover;
         background-repeat: no-repeat;
