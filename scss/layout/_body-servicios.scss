@@ -1,5 +1,4 @@
-.grid-container-servicios { 
-    width: 100%;   
+.grid-container-servicios {      
     @include grid( repeat(3, 1fr),80px 450px 400px 700px  250px , none, none,  
         "header header header "
         "presentacion-servicios presentacion-servicios presentacion-servicios"
@@ -8,7 +7,7 @@
         "footer footer footer ");
 
         .presentacion-servicios {
-            background-image: url("./../assets/dog-grass-sky.jpg") ;
+            background-image: url("./../assets/dog-grass-sky.jpg") ;            
             grid-area: presentacion-servicios ;
             background-size:cover;
             background-repeat: no-repeat;
@@ -18,6 +17,12 @@
                         margin-right: 80px;
                     }
             
+        }
+        .textos-presentacion{           
+            display: flex;
+            flex-direction: row;
+           justify-content: right;
+           
         }
         .intro-servicios {
             background-color: map-get($colors, fondoCrema); 

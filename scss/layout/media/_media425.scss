@@ -1,15 +1,21 @@
 
-@media (max-width: 425px)  {
+@media (max-width: 430px)  {
 
 
 header {
     justify-content: center;
     .navbar { 
-        flex-direction: column;         
+        flex-direction: column;
+       justify-items: center;  
         .pow {
             padding: 0px;
             font-size: 35px;
        }
+       .logo-nav {
+        img{            
+             margin-left: 0px;  
+        }
+    }
        ul{ 
         gap: 3px;
         flex-direction: column; 
@@ -41,26 +47,46 @@ header {
             display: none;
         }
     }
-    .bloque-info-contacto {
-        .info-contacto{    
-           justify-content: center;           
-        } 
-    }    
+    .bloque-info-contacto{
+        .info-contacto{  
+                justify-content: center;  
+
+            .item-info{
+              width: 25px;
+              height: 25px;
+            }
+             .info {
+                font-size: 20px;                  
+                padding-top: 10px;
+                padding-left: 5px;
+            }  
+          
+         }   
+      }   
     .bloque-redes {    
         padding: 15px;
         margin-bottom: 20px; 
-        .seguinos {                   
-            font-size: 25px;
-        }                  
+        // .seguinos { 
+        //     display: ;                  
+        //         font-size: 25px;
+        // } 
+        .redes{
+            @include flex(row,space-evenly,center, none); 
+            justify-items: center;   
+                .item-redes{
+                   width: 50px;
+                   height: 50px;
+                  // padding: 10px;
+                 }         
+            }
+               
       } 
 }
 h1{
-    font-size: 30px;
-    text-align: end;
-    margin-right: .625rem;
+    font-size: 25px;
+    
 }
 h2 {
-    /* font-weight: bold; */
     font-size: 28px;
     text-align: center; 
     padding: 20px 0px 5px 0px;
@@ -76,19 +102,6 @@ h3{
     padding: 15px;
     line-height: 1.25rem;       
 }
-// .card  {
-//     margin: 30px;
-//      width: 320px;
-//       align-self: center; 
-//        .card-text  {
-//            font-size:20px;    
-//         }         
-//         .card-title  {
-//             font-size:25px;
-//         }
-      
-//  }
-
  .grid-container-index {
     width: 100%;
     display: grid;
@@ -104,32 +117,39 @@ h3{
 
         .presentacion {            
             .textos-presentacion{
-                margin-right: 1.25rem;
-                display: flex;
-                flex-direction: column;
-                justify-items: end;
+                 padding-right: 20px;
+                margin-right:0px;
                 .parrafo-presentacion{
                     font-size: .625rem;
                 }
             }
         }
         .contenedor-servicios {  
+
             .contenedor-cards{
+                display: flex;
+                width: 100%;
               flex-direction: column;
-              align-items:center;
-              justify-items: center;
-              
-              padding-bottom: 1.25rem;
-             
+             align-items:center;
+             justify-content: center;
+              justify-items: center;              
+              padding-bottom: 1.25rem;             
                 .card{
                     width: 330px;
-                     height: 400px;  
+                     height: 350px;  
                     margin: .9375rem;
                                       
                     .img-card {
                         width: 270px;
-                        // padding: 5px 0px 35px 0px;                  
-                      }          
+                        padding: 10px 0px 30px 0px;                  
+                      } 
+                      .btn-servicios {   
+                        width: 80px;
+                        height: 50px;                       
+                        a {                          
+                            font-size: 25px;                           
+                        }    
+                    }         
                  }
               }                  
           } 
@@ -179,8 +199,7 @@ h3{
                 justify-content: center; 
                 .quality{
                     width: 350px;
-                    height: 350px; 
-                    // padding: 30px;             
+                    height: 350px;         
                    }
             }
         } 
@@ -189,16 +208,6 @@ h3{
                 font-size: map-get($font-size, h3);
                 text-align: center;
             }
-            // background-color: map-get($colors, fondoDurazno); 
-            // grid-area: contenedor-equipo ;
-            // display: flex;
-            // flex-direction: column;
-            // .titulo-equipo {
-            //      font-size: 30px;
-            //      text-align: left; 
-            //      padding-left: 20px; 
-            //      padding-top: 30px;   
-            // }
             .compromiso {
                 display: flex;
                 flex-direction: column;
@@ -226,18 +235,28 @@ h3{
         "detalle-servicios "
         "footer ";
 
+        .presentacion-servicios {              
+                   .textos-presentacion {                                   
+                         margin-right: 40px;
+                     }             
+         }
+
         .detalle-servicios {
-           flex-direction: column;
-           justify-content: center;
-           align-items: center;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;           
+            display: flex;
               .card{
+                margin-top:20px;
+                margin-bottom: 20px;
+                width: 350px; 
                 .card-body {
                     h3{
                         text-align: center;
                     }
                 }
               }
-            }
+        }
 }
 
 .grid-container-adopciones {
@@ -251,6 +270,11 @@ h3{
         "presentacion-adopciones "
         "adopciones-ofrecidas "       
         "footer ";
+        .presentacion-adopciones {
+            .textos-presentacion{
+                margin-right: 15px;
+            }
+        }
         .adopciones-ofrecidas{
             .grid-galeria-adopciones {           
                 padding: 20px;
@@ -266,14 +290,12 @@ h3{
                     ;           
                    align-content: center;
                    justify-content: center;
-                //    gap: 20px;
-           
+               
             }
-    }
-
         }
-        
 
+}
+        
 .grid-container-planes {
     width: 100%;
     display: grid;
@@ -287,11 +309,26 @@ h3{
         "detalle-planes "
         "footer ";
 
+        .intro-planes {
+            h2{
+               font-size: 25px;   
+               padding-left: 1.875rem;
+                padding-right:30px;
+            }
+            .parrafo-nosotros {
+                font-size: 18px;
+                padding-left: 20px;
+                padding-right:20px;
+            }
+            
+         }   
         .detalle-planes {
             flex-direction: column;
             justify-content: center;
             align-items: center;
                .card{
+                width: 320px;
+                margin: 20px;
                  .card-body {
                      h3{
                          text-align: center;

@@ -3,28 +3,30 @@
   padding: 0;
   box-sizing: border-box; }
 
-h1, h2, h3 {
+h1 {
   font-size: 3.125rem;
   color: black;
   font-weight: bold; }
 
 h2 {
+  color: black;
+  font-weight: bold;
   font-size: 2.1875rem;
   text-align: center;
-  padding: 30px; }
+  padding-top: 40px; }
 
 h3 {
+  color: black;
+  font-weight: bold;
   font-size: 1.875rem;
   text-align: center;
-  padding: 15px; }
-
-.card-text {
-  font-weight: bold; }
+  padding: 10px; }
 
 .parrafo-nosotros {
   font-size: 25px;
   text-align: left;
-  padding: 40px;
+  padding-left: 50px;
+  padding-right: 50px;
   line-height: 40px; }
 
 body {
@@ -32,7 +34,6 @@ body {
   width: 100%; }
 
 .grid-container-servicios {
-  width: 100%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 80px 450px 400px 700px 250px;
@@ -56,6 +57,10 @@ body {
       align-items: center;
       gap: none;
       margin-right: 80px; }
+  .grid-container-servicios .textos-presentacion {
+    display: flex;
+    flex-direction: row;
+    justify-content: right; }
   .grid-container-servicios .intro-servicios {
     background-color: #F4DFB6;
     grid-area: intro-servicios;
@@ -86,7 +91,7 @@ body {
 .grid-container-planes {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 80px 450px 400px 650px 250px;
+  grid-template-rows: 80px 450px 400px auto 250px;
   justify-content: none;
   align-content: none;
   grid-template-areas: "header header header " "presentacion-planes presentacion-planes presentacion-planes" "intro-planes intro-planes img-planes" "detalle-planes detalle-planes  detalle-planes " "footer footer footer "; }
@@ -129,6 +134,10 @@ body {
       .grid-container-planes .detalle-planes .card .card-body {
         text-align: center;
         background-color: #F4DFB6; }
+        .grid-container-planes .detalle-planes .card .card-body .card-text {
+          font-weight: bold;
+          padding: 1.5625rem;
+          font-size: 1.25rem; }
         .grid-container-planes .detalle-planes .card .card-body div .img-star {
           width: 40px;
           height: 40px; }
@@ -153,7 +162,8 @@ body {
     .grid-container-index .presentacion .textos-presentacion {
       display: flex;
       flex-direction: column;
-      align-items: center;
+      align-items: left;
+      justify-content: right;
       margin-right: 80px; }
       .grid-container-index .presentacion .textos-presentacion .parrafo-presentacion {
         font-size: 1.875rem; }
@@ -231,17 +241,15 @@ body {
       .grid-container-nosotros .contenedor-compromiso .compromiso .quality {
         width: 300px;
         height: 300px;
-        padding: 30px; }
+        padding: 15px; }
   .grid-container-nosotros .contenedor-equipo {
     background-color: #EC8F5E;
     grid-area: contenedor-equipo;
     display: flex;
     flex-direction: column; }
     .grid-container-nosotros .contenedor-equipo .titulo-equipo {
-      font-size: 30px;
       text-align: left;
-      padding-left: 20px;
-      padding-top: 30px; }
+      padding: 40px 0px 0px 50px; }
     .grid-container-nosotros .contenedor-equipo .compromiso {
       display: flex;
       flex-direction: row;
@@ -250,18 +258,18 @@ body {
         width: 400px;
         height: 400px;
         padding-right: 30px;
-        padding-bottom: 20px; }
+        padding-bottom: 30px; }
 
 .grid-container-adopciones {
   width: 100%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 80px 500px 1150px 250px;
+  grid-template-rows: 80px 450px 1150px 250px;
   justify-content: none;
   align-content: none;
   grid-template-areas: "header header header " "presentacion-adopciones presentacion-adopciones presentacion-adopciones" "adopciones-ofrecidas adopciones-ofrecidas adopciones-ofrecidas" "footer footer footer "; }
   .grid-container-adopciones .presentacion-adopciones {
-    background-image: url("./../assets/pets-group.jpg");
+    background-image: url("./../assets/perro-gato-adopciones.jpg");
     grid-area: presentacion-adopciones;
     background-size: cover;
     background-repeat: no-repeat;
@@ -288,7 +296,7 @@ body {
       display: grid;
       grid-template-columns: repeat(4, 15%);
       grid-template-rows: repeat(3, 300px);
-      grid-template-areas: "img-4 img-4 img-6 img-6" "img-1 img-1 img-3 img-3" "img-1 img-1 img-7 img-7";
+      grid-template-areas: "img-4 img-4 img-6 img-6" "img-7 img-7 img-3 img-3" "img-7 img-7 img-1 img-1";
       align-content: center;
       justify-content: center;
       gap: 20px; }
@@ -425,32 +433,206 @@ footer {
     gap: 2.5rem;
     padding-right: 30px;
     margin-left: 60px; }
-  .grid-container-index .contenedor-servicios .contenedor-cards {
-    padding-left: .9375rem;
-    padding-right: .9375rem;
-    padding-bottom: .9375rem; }
-    .grid-container-index .contenedor-servicios .contenedor-cards .card {
-      width: 310px;
-      height: 400px; }
-      .grid-container-index .contenedor-servicios .contenedor-cards .card .img-card {
-        width: 280px;
-        padding: 5px 0px 35px 0px; } }
+  .parrafo-nosotros {
+    font-size: 20px;
+    text-align: left;
+    padding: 0px 30px 25px 35px;
+    line-height: 40px; }
+  .grid-container-index {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 90px 450px 550px 400px 250px;
+    justify-content: none;
+    align-content: none;
+    grid-template-areas: "header header header" "presentacion presentacion presentacion" "contenedor-servicios contenedor-servicios contenedor-servicios" "contenedor-adopciones contenedor-adopciones  contenedor-adopciones" "footer footer footer"; }
+    .grid-container-index .presentacion .textos-presentacion {
+      align-items: left;
+      justify-content: right;
+      margin-right: 70px; }
+      .grid-container-index .presentacion .textos-presentacion .parrafo-presentacion {
+        font-size: 1.5625rem; }
+    .grid-container-index .contenedor-servicios .contenedor-cards {
+      padding-left: .9375rem;
+      padding-right: .9375rem;
+      padding-bottom: .9375rem; }
+      .grid-container-index .contenedor-servicios .contenedor-cards .card {
+        width: 310px;
+        height: 400px; }
+        .grid-container-index .contenedor-servicios .contenedor-cards .card h3 {
+          padding: .625rem; }
+        .grid-container-index .contenedor-servicios .contenedor-cards .card .img-card {
+          width: 280px; }
+    .grid-container-index .contenedor-adopciones h3 {
+      padding: .625rem; }
+  .grid-container-planes .detalle-planes .card {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 230px; }
+    .grid-container-planes .detalle-planes .card .card-body .card-text {
+      padding: 15px;
+      font-size: 1.25rem;
+      font-weight: bold; }
+  .grid-container-servicios {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 80px 450px 350px auto 250px;
+    justify-content: none;
+    align-content: none;
+    grid-template-areas: "header header header " "presentacion-servicios presentacion-servicios presentacion-servicios" "intro-servicios intro-servicios img-servicios" "detalle-servicios detalle-servicios  detalle-servicios " "footer footer footer "; }
+    .grid-container-servicios .detalle-servicios .card {
+      margin-top: 20px;
+      margin-bottom: 20px;
+      width: 290px; }
+  .grid-container-nosotros {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 80px 450px auto auto 250px;
+    justify-content: none;
+    align-content: none;
+    grid-template-areas: "header header header " "presentacion-nosotros presentacion-nosotros presentacion-nosotros" "contenedor-compromiso contenedor-compromiso contenedor-compromiso" "contenedor-equipo contenedor-equipo  contenedor-equipo " "footer footer footer "; }
+  .grid-container-adopciones .adopciones-ofrecidas {
+    width: 100%;
+    grid-area: adopciones-ofrecidas;
+    background-color: #F1EB90; }
+    .grid-container-adopciones .adopciones-ofrecidas .grid-galeria-adopciones {
+      padding-left: 10px;
+      padding-right: 10px;
+      width: 100%; } }
 
-@media (max-width: 768px) {
+@media (max-width: 950px) {
+  header .navbar .logo-nav img {
+    width: 85px;
+    margin-left: 35px; }
+  header .navbar .pow {
+    font-size: 25px; }
+  header .navbar ul {
+    gap: 2.5rem;
+    margin-right: 3.125rem;
+    margin-left: 95px; }
+    header .navbar ul li a {
+      font-size: 1.25rem; }
+  .grid-container-index {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 90px 400px 500px 350px 250px;
+    justify-content: none;
+    align-content: none;
+    grid-template-areas: "header header header" "presentacion presentacion presentacion" "contenedor-servicios contenedor-servicios contenedor-servicios" "contenedor-adopciones contenedor-adopciones  contenedor-adopciones" "footer footer footer"; }
+    .grid-container-index .contenedor-servicios .contenedor-cards .card {
+      width: 270px;
+      height: 350px; }
+      .grid-container-index .contenedor-servicios .contenedor-cards .card h3 {
+        padding: 10px; }
+      .grid-container-index .contenedor-servicios .contenedor-cards .card .img-card {
+        width: 230px; }
+    .grid-container-index .contenedor-adopciones h3 {
+      padding: 10px; }
+    .grid-container-index .contenedor-adopciones .items-adopcion .item .en-adopcion {
+      width: 12.5rem;
+      height: 12.5rem;
+      border-radius: 150px; }
   .grid-container-servicios {
     display: grid;
-    grid-template-columns: repeat(3, 33%);
-    grid-template-rows: 70px 290px 250px 560px  180px;
-    grid-template-areas: "header header header " "presentacion-servicios presentacion-servicios presentacion-servicios" "intro-servicios intro-servicios img-servicios" "detalle-servicios detalle-servicios  detalle-servicios " "footer footer footer "; }
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 80px 350px 300px auto 250px;
+    justify-content: none;
+    align-content: none;
+    grid-template-areas: "header header header " "presentacion-servicios presentacion-servicios presentacion-servicios" "intro-servicios intro-servicios img-servicios" "detalle-servicios detalle-servicios  detalle-servicios " "footer footer footer "; }
+    .grid-container-servicios .detalle-servicios .card {
+      margin-top: 20px;
+      margin-bottom: 20px;
+      width: 265px; } }
+
+@media (max-width: 820px) {
+  h1 {
+    font-size: 30px; }
+  h2 {
+    font-size: 25px; }
+  h3 {
+    font-size: 20px; }
+  .parrafo-nosotros {
+    font-size: 15px;
+    text-align: left;
+    padding-left: 40px;
+    padding-right: 40px;
+    line-height: 35px; }
   .grid-container-index {
-    grid-template-rows: 90px 350px 500px 300px 250px; }
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 90px 450px 600px 450px 250px;
+    justify-content: none;
+    align-content: none;
+    grid-template-areas: "header header header" "presentacion presentacion presentacion" "contenedor-servicios contenedor-servicios contenedor-servicios" "contenedor-adopciones contenedor-adopciones  contenedor-adopciones" "footer footer footer"; }
+    .grid-container-index .presentacion {
+      grid-area: presentacion;
+      background-image: url("./../assets/cocker.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: end;
+      gap: none; }
+      .grid-container-index .presentacion .textos-presentacion {
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        justify-content: right;
+        margin-right: 80px; }
+        .grid-container-index .presentacion .textos-presentacion .parrafo-presentacion {
+          font-size: 1.875rem; }
+    .grid-container-index .contenedor-servicios {
+      grid-area: contenedor-servicios;
+      background-color: #F3B664; }
+      .grid-container-index .contenedor-servicios .contenedor-cards {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: none;
+        gap: none; }
+        .grid-container-index .contenedor-servicios .contenedor-cards .card {
+          width: 350px;
+          height: 400px;
+          background-color: #F4DFB6;
+          text-align: center;
+          border: 1px solid rgba(0, 0, 0, 0.278);
+          border-radius: 1.25rem;
+          overflow: hidden;
+          display: flex;
+          flex-direction: column;
+          justify-content: none;
+          align-items: center;
+          gap: none; }
+          .grid-container-index .contenedor-servicios .contenedor-cards .card .img-card {
+            width: 300px;
+            padding: 5px 0px 35px 0px; }
+          .grid-container-index .contenedor-servicios .contenedor-cards .card .btn-servicios a {
+            font-size: 20px; }
+    .grid-container-index .contenedor-adopciones {
+      grid-area: contenedor-adopciones;
+      background-color: #F4DFB6; }
+      .grid-container-index .contenedor-adopciones .items-adopcion {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        gap: none; }
+        .grid-container-index .contenedor-adopciones .items-adopcion .item .en-adopcion {
+          width: 15.625rem;
+          height: 15.625rem;
+          border-radius: 150px; }
+  .grid-container-servicios .presentacion-servicios {
+    background-image: url("./../assets/perro-servicios.jpg"); }
+  .grid-container-index {
+    grid-template-rows: 90px 350px 450px 300px 250px; }
     .grid-container-index .contenedor-servicios .contenedor-cards {
       padding-bottom: 5px; }
       .grid-container-index .contenedor-servicios .contenedor-cards .card {
         width: 220px;
-        height: 350px; }
+        height: 320px; }
         .grid-container-index .contenedor-servicios .contenedor-cards .card .img-card {
-          width: 200px;
+          width: 190px;
           padding: 5px 0px 35px 0px; }
     .grid-container-index .contenedor-adopciones .items-adopcion .item .en-adopcion {
       width: 9.375rem;
@@ -458,6 +640,37 @@ footer {
       border-radius: 150px; }
     .grid-container-index .contenedor-adopciones .items-adopcion .item .btn-ver-mas .btn-adopciones {
       align-self: center; }
+  .grid-container-nosotros {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: 80px 290px auto auto 250px;
+    justify-content: none;
+    align-content: none;
+    grid-template-areas: "header header " "presentacion-nosotros presentacion-nosotros " "contenedor-compromiso contenedor-compromiso " "contenedor-equipo contenedor-equipo   " "footer footer "; }
+    .grid-container-nosotros .presentacion-nosotros .textos-presentacion {
+      margin-right: 70px; }
+    .grid-container-nosotros .contenedor-compromiso .compromiso {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center; }
+      .grid-container-nosotros .contenedor-compromiso .compromiso .quality {
+        width: 300px;
+        height: 300px;
+        padding: 15px; }
+    .grid-container-nosotros .contenedor-equipo {
+      background-color: #EC8F5E;
+      grid-area: contenedor-equipo;
+      display: flex;
+      flex-direction: column; }
+      .grid-container-nosotros .contenedor-equipo .titulo-equipo {
+        text-align: left;
+        padding: 40px 0px 0px 60px; }
+      .grid-container-nosotros .contenedor-equipo .compromiso .foto-equipo {
+        width: 300px;
+        height: 300px;
+        padding-right: 25px;
+        padding-bottom: 25px; }
   footer .brand-footer .pow {
     display: none; }
   header .navbar .logo-nav img {
@@ -472,14 +685,147 @@ footer {
     header .navbar ul li a {
       font-size: .9375rem; } }
 
-@media (max-width: 425px) {
+@media (max-width: 540px) {
+  h1 {
+    font-size: 25px; }
+  h2 {
+    font-size: 20px; }
+  h3 {
+    font-size: 15px; }
+  .parrafo-nosotros {
+    font-size: 12px;
+    padding-top: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    line-height: 20px; }
+  header .navbar .pow {
+    display: none; }
+  header .navbar ul {
+    gap: 1.25rem;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 30px;
+    margin-left: 0px; }
+    header .navbar ul li a {
+      font-size: .9375rem; }
+  .grid-container-index {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 70px 300px auto auto auto;
+    justify-content: none;
+    align-content: none;
+    grid-template-areas: "header header " "presentacion presentacion " "contenedor-servicios  contenedor-servicios" "contenedor-adopciones   contenedor-adopciones" "footer footer "; }
+    .grid-container-index .presentacion .textos-presentacion {
+      align-items: center;
+      justify-content: right;
+      margin-right: 30px; }
+      .grid-container-index .presentacion .textos-presentacion .parrafo-presentacion {
+        font-size: 15px; }
+    .grid-container-index .contenedor-servicios .contenedor-cards {
+      display: grid;
+      grid-template-columns: repeat(2, 50%);
+      grid-template-rows: repeat(2, 50%);
+      gap: .9375rem;
+      padding-bottom: 1.875rem; }
+      .grid-container-index .contenedor-servicios .contenedor-cards .card {
+        width: 220px;
+        height: 250px; }
+        .grid-container-index .contenedor-servicios .contenedor-cards .card .img-card {
+          width: 180px;
+          padding: 3px 0px 10px 0px; }
+        .grid-container-index .contenedor-servicios .contenedor-cards .card .btn-servicios {
+          width: 70px;
+          height: 40px; }
+          .grid-container-index .contenedor-servicios .contenedor-cards .card .btn-servicios a {
+            font-size: 20px; }
+        .grid-container-index .contenedor-servicios .contenedor-cards .card:first-child {
+          grid-column: 1 / 2;
+          grid-row: 1 / 2;
+          justify-self: center; }
+        .grid-container-index .contenedor-servicios .contenedor-cards .card:nth-child(2) {
+          grid-column: 2 / 3;
+          grid-row: 1 / 2;
+          justify-self: center; }
+        .grid-container-index .contenedor-servicios .contenedor-cards .card:last-child {
+          grid-column: 1 / 3;
+          grid-row: 2 / 3;
+          justify-self: center; }
+    .grid-container-index .contenedor-adopciones .items-adopcion {
+      justify-content: left; }
+      .grid-container-index .contenedor-adopciones .items-adopcion .item:nth-child(3) {
+        display: none; }
+      .grid-container-index .contenedor-adopciones .items-adopcion .item .en-adopcion {
+        width: 9.375rem;
+        height: 9.375rem;
+        border-radius: 150px;
+        margin-left: 1.5625rem;
+        margin-right: 1.5625rem; }
+      .grid-container-index .contenedor-adopciones .items-adopcion .item .nombre-adopcion {
+        font-size: 25px; }
+      .grid-container-index .contenedor-adopciones .items-adopcion .btn-ver-mas .btn-adopciones {
+        width: 90px;
+        height: 40px; }
+        .grid-container-index .contenedor-adopciones .items-adopcion .btn-ver-mas .btn-adopciones a {
+          font-size: 15px; }
+  .grid-container-nosotros {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: 80px 250px auto auto auto;
+    justify-content: none;
+    align-content: none;
+    grid-template-areas: "header header " "presentacion-nosotros presentacion-nosotros " "contenedor-compromiso contenedor-compromiso " "contenedor-equipo contenedor-equipo   " "footer footer "; }
+    .grid-container-nosotros .contenedor-compromiso .compromiso .quality {
+      width: 200px;
+      height: 200px;
+      padding: .75rem; }
+    .grid-container-nosotros .contenedor-equipo .titulo-equipo {
+      text-align: left;
+      padding: 40px 0px 0px 35px; }
+    .grid-container-nosotros .contenedor-equipo .compromiso .foto-equipo {
+      width: 200px;
+      height: 200px;
+      padding-right: 20px;
+      padding-bottom: 25px; }
+  footer .brand-footer .pow {
+    display: none; }
+  footer .bloque-info-contacto .info-contacto {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    gap: none; }
+    footer .bloque-info-contacto .info-contacto .info {
+      font-size: 15px;
+      padding-top: 10px;
+      padding-left: 5px; }
+    footer .bloque-info-contacto .info-contacto .item-info {
+      width: 20px;
+      height: 20px; }
+  footer .bloque-redes .seguinos {
+    display: none; }
+  footer .bloque-redes .redes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: none;
+    justify-items: center; }
+    footer .bloque-redes .redes .item-redes {
+      width: 40px;
+      height: 40px;
+      padding: .3125rem; } }
+
+@media (max-width: 430px) {
   header {
     justify-content: center; }
     header .navbar {
-      flex-direction: column; }
+      flex-direction: column;
+      justify-items: center; }
       header .navbar .pow {
         padding: 0px;
         font-size: 35px; }
+      header .navbar .logo-nav img {
+        margin-left: 0px; }
       header .navbar ul {
         gap: 3px;
         flex-direction: column;
@@ -505,17 +851,29 @@ footer {
         display: none; }
     footer .bloque-info-contacto .info-contacto {
       justify-content: center; }
+      footer .bloque-info-contacto .info-contacto .item-info {
+        width: 25px;
+        height: 25px; }
+      footer .bloque-info-contacto .info-contacto .info {
+        font-size: 20px;
+        padding-top: 10px;
+        padding-left: 5px; }
     footer .bloque-redes {
       padding: 15px;
       margin-bottom: 20px; }
-      footer .bloque-redes .seguinos {
-        font-size: 25px; }
-  h1, h2, h3 {
-    font-size: 30px;
-    text-align: end;
-    margin-right: .625rem; }
+      footer .bloque-redes .redes {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        gap: none;
+        justify-items: center; }
+        footer .bloque-redes .redes .item-redes {
+          width: 50px;
+          height: 50px; }
+  h1 {
+    font-size: 25px; }
   h2 {
-    /* font-weight: bold; */
     font-size: 28px;
     text-align: center;
     padding: 20px 0px 5px 0px; }
@@ -535,23 +893,30 @@ footer {
     grid-template-rows: auto 220px auto auto auto;
     grid-template-areas: "header  " "presentacion" "contenedor-servicios" "contenedor-adopciones "        "footer "; }
     .grid-container-index .presentacion .textos-presentacion {
-      margin-right: 1.25rem;
-      display: flex;
-      flex-direction: column;
-      justify-items: end; }
+      padding-right: 20px;
+      margin-right: 0px; }
       .grid-container-index .presentacion .textos-presentacion .parrafo-presentacion {
         font-size: .625rem; }
     .grid-container-index .contenedor-servicios .contenedor-cards {
+      display: flex;
+      width: 100%;
       flex-direction: column;
       align-items: center;
+      justify-content: center;
       justify-items: center;
       padding-bottom: 1.25rem; }
       .grid-container-index .contenedor-servicios .contenedor-cards .card {
         width: 330px;
-        height: 400px;
+        height: 350px;
         margin: .9375rem; }
         .grid-container-index .contenedor-servicios .contenedor-cards .card .img-card {
-          width: 270px; }
+          width: 270px;
+          padding: 10px 0px 30px 0px; }
+        .grid-container-index .contenedor-servicios .contenedor-cards .card .btn-servicios {
+          width: 80px;
+          height: 50px; }
+          .grid-container-index .contenedor-servicios .contenedor-cards .card .btn-servicios a {
+            font-size: 25px; }
     .grid-container-index .contenedor-adopciones h3 {
       font-size: 1.25rem;
       text-align: center; }
@@ -600,12 +965,19 @@ footer {
     grid-template-columns: 100%;
     grid-template-rows: auto 230px auto auto auto;
     grid-template-areas: "header  " "presentacion-servicios " "intro-servicios " "detalle-servicios " "footer "; }
+    .grid-container-servicios .presentacion-servicios .textos-presentacion {
+      margin-right: 40px; }
     .grid-container-servicios .detalle-servicios {
       flex-direction: column;
       justify-content: center;
-      align-items: center; }
-      .grid-container-servicios .detalle-servicios .card .card-body h3 {
-        text-align: center; }
+      align-items: center;
+      display: flex; }
+      .grid-container-servicios .detalle-servicios .card {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        width: 350px; }
+        .grid-container-servicios .detalle-servicios .card .card-body h3 {
+          text-align: center; }
   .grid-container-adopciones {
     width: 100%;
     display: grid;
@@ -613,6 +985,8 @@ footer {
     /* grid-template-rows: 20px 200px 300px 300px 40px ; */
     grid-template-rows: auto 200px auto auto auto;
     grid-template-areas: "header  " "presentacion-adopciones " "adopciones-ofrecidas "        "footer "; }
+    .grid-container-adopciones .presentacion-adopciones .textos-presentacion {
+      margin-right: 15px; }
     .grid-container-adopciones .adopciones-ofrecidas .grid-galeria-adopciones {
       padding: 20px;
       width: 100%;
@@ -628,15 +1002,130 @@ footer {
     /* grid-template-rows: 20px 200px 300px 300px 40px ; */
     grid-template-rows: auto 200px auto auto auto;
     grid-template-areas: "header  " "presentacion-planes " "intro-planes " "detalle-planes " "footer "; }
+    .grid-container-planes .intro-planes h2 {
+      font-size: 25px;
+      padding-left: 1.875rem;
+      padding-right: 30px; }
+    .grid-container-planes .intro-planes .parrafo-nosotros {
+      font-size: 18px;
+      padding-left: 20px;
+      padding-right: 20px; }
     .grid-container-planes .detalle-planes {
       flex-direction: column;
       justify-content: center;
       align-items: center; }
-      .grid-container-planes .detalle-planes .card .card-body h3 {
-        text-align: center; }
+      .grid-container-planes .detalle-planes .card {
+        width: 320px;
+        margin: 20px; }
+        .grid-container-planes .detalle-planes .card .card-body h3 {
+          text-align: center; }
     .grid-container-planes .img-planes {
       display: none; } }
 
 @media (max-width: 320px) {
-  header .navbar {
-    background-color: lightblue; } }
+  header .navbar .pow {
+    font-size: 25px; }
+  header .navbar ul {
+    gap: 2px; }
+    header .navbar ul li a {
+      font-size: 20px; }
+  h1 {
+    font-size: 18px; }
+  h2 {
+    /* font-weight: bold; */
+    font-size: 25px;
+    text-align: center;
+    padding: 20px 20px 0px 20px; }
+  h3 {
+    font-size: 25px;
+    text-align: center; }
+  footer {
+    flex-direction: column;
+    justify-content: center; }
+    footer .bloque-info-contacto .info-contacto {
+      justify-content: center;
+      align-items: center; }
+      footer .bloque-info-contacto .info-contacto .info {
+        font-size: 15px; }
+      footer .bloque-info-contacto .info-contacto .item-info {
+        width: 20px;
+        height: 20px; }
+    footer .bloque-redes .seguinos {
+      font-size: 20px; }
+    footer .bloque-redes .redes .item-redes {
+      width: 40px;
+      height: 40px; }
+  .grid-container-index {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 100%;
+    /* grid-template-rows: 20px 200px 300px 300px 40px ; */
+    grid-template-rows: auto 220px auto auto auto;
+    grid-template-areas: "header  " "presentacion" "contenedor-servicios" "contenedor-adopciones "        "footer "; }
+    .grid-container-index .presentacion .textos-presentacion {
+      justify-items: center;
+      padding-right: 10px;
+      padding-left: 18px; }
+    .grid-container-index .contenedor-servicios .contenedor-cards .card {
+      width: 250px;
+      height: 320px;
+      margin: .625rem; }
+      .grid-container-index .contenedor-servicios .contenedor-cards .card .img-card {
+        width: 220px; }
+    .grid-container-index .contenedor-adopciones h3 {
+      font-size: 1.25rem;
+      text-align: center; }
+    .grid-container-index .contenedor-adopciones .items-adopcion {
+      padding-bottom: 1.25rem; }
+      .grid-container-index .contenedor-adopciones .items-adopcion .item .en-adopcion {
+        width: 12.5rem;
+        height: 12.5rem;
+        border-radius: 150px; }
+  .grid-container-nosotros .contenedor-compromiso .compromiso .parrafo-nosotros {
+    font-size: 15px;
+    padding-bottom: 0rem; }
+  .grid-container-nosotros .contenedor-compromiso .compromiso .quality {
+    width: 250px;
+    height: 250px;
+    padding: .3125rem; }
+  .grid-container-nosotros .contenedor-equipo .titulo-equipo {
+    font-size: 20px; }
+  .grid-container-nosotros .contenedor-equipo .compromiso .parrafo-nosotros {
+    font-size: 15px;
+    text-align: center;
+    padding: 30px; }
+  .grid-container-nosotros .contenedor-equipo .compromiso .foto-equipo {
+    width: 230px;
+    height: 250px; }
+  .grid-container-planes .intro-planes h2 {
+    font-size: 1.25rem; }
+  .grid-container-planes .intro-planes .parrafo-nosotros {
+    font-size: .9375rem; }
+  .grid-container-planes .detalle-planes .card {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 250px; }
+    .grid-container-planes .detalle-planes .card .card-body .card-text {
+      font-weight: bold;
+      padding: 1.5625rem;
+      font-size: .9375rem; }
+  .grid-container-servicios .presentacion-servicios .textos-presentacion {
+    margin-right: 10px; }
+  .grid-container-servicios .intro-servicios h2 {
+    font-size: 1.25rem; }
+  .grid-container-servicios .intro-servicios .parrafo-nosotros {
+    font-size: .9375rem;
+    padding-left: 25px;
+    padding-right: 1.5625rem; }
+  .grid-container-servicios .detalle-servicios .card {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 230px; }
+    .grid-container-servicios .detalle-servicios .card .card-body .card-title {
+      font-size: 1.25rem; }
+    .grid-container-servicios .detalle-servicios .card .card-body .card-text {
+      font-weight: normal;
+      padding: 1.25rem;
+      font-size: .9375rem; }
+  .grid-container-adopciones .presentacion-adopciones .textos-presentacion {
+    margin-right: 5px; } }

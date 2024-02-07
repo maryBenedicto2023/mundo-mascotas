@@ -1,6 +1,6 @@
 @media (max-width: 1024px)  {
     header {
-        .navbar{                 
+        .navbar{                
             .logo-nav {                
                 img{                   
                      margin-left: 40px; 
@@ -16,7 +16,29 @@
             }
         }
     }
+    .parrafo-nosotros {
+        font-size:20px;
+        text-align: left;
+       padding: 0px 30px 25px 35px;
+        line-height: 40px;        
+    }
+
     .grid-container-index { 
+        @include grid (1fr 1fr 1fr,90px 450px 550px 400px 250px, none, none,"header header header" 
+        "presentacion presentacion presentacion"
+         "contenedor-servicios contenedor-servicios contenedor-servicios"
+        "contenedor-adopciones contenedor-adopciones  contenedor-adopciones"
+         "footer footer footer" ); 
+         .presentacion{            
+            .textos-presentacion {             
+             align-items: left; 
+             justify-content: right;      
+             margin-right: 70px;
+                  .parrafo-presentacion{   
+                 font-size: 1.5625rem; 
+                 }
+         } 
+       }
         .contenedor-servicios {       
           .contenedor-cards{ 
             padding-left: .9375rem;
@@ -24,16 +46,178 @@
             padding-bottom: .9375rem ;       
               .card{
                   width: 310px;
-                   height: 400px;                       
+                   height: 400px;  
+                   h3 {
+                     padding: .625rem;
+                   }                     
                   .img-card {
                       width: 280px;
-                      padding: 5px 0px 35px 0px;                  
+                     // padding: 5px 0px 35px 0px;                  
                     }          
                }
             }                  
         }
+        .contenedor-adopciones{
+           h3{
+             padding: .625rem;
+           }
+         }
+        
     }
+    
+    .grid-container-planes {     
+        .detalle-planes {           
+            .card  {
+                margin-top:15px;
+                margin-bottom: 15px;
+                 width: 230px;  
+
+                 .card-body{
+                    .card-text{
+                        padding: 15px;
+                        font-size: 1.25rem;
+                        font-weight: bold;
+                    }
+                   
+                } 
+            } 
+        }
+            
+    }
+
+    .grid-container-servicios { 
+        width: 100%;   
+        @include grid( repeat(3, 1fr),80px 450px 350px auto  250px , none, none,  
+            "header header header "
+            "presentacion-servicios presentacion-servicios presentacion-servicios"
+            "intro-servicios intro-servicios img-servicios"
+            "detalle-servicios detalle-servicios  detalle-servicios "
+            "footer footer footer ");
+            .detalle-servicios {
+                .card  {
+                  margin-top:20px;
+                  margin-bottom: 20px;
+                  width: 290px; 
+                }
+        }  
+
+    }   
+    .grid-container-nosotros {    
+        @include grid( repeat(3, 1fr),80px 450px auto auto 250px , none, none,  
+            "header header header "
+            "presentacion-nosotros presentacion-nosotros presentacion-nosotros"
+            "contenedor-compromiso contenedor-compromiso contenedor-compromiso"
+            "contenedor-equipo contenedor-equipo  contenedor-equipo "
+            "footer footer footer ");
+        } 
+        .grid-container-adopciones {
+                .adopciones-ofrecidas{
+                    width: 100%;
+                    grid-area: adopciones-ofrecidas;
+                    background-color: map-get($colors, fondoAmarillo);  
+                    
+                    .grid-galeria-adopciones {
+                        padding-left: 10px;
+                        padding-right: 10px;
+                        width: 100%;
+                        // display: grid;
+                        // grid-template-columns: repeat(4, 15%);
+                        // grid-template-rows: repeat(3, 300px);
+                        // grid-template-areas:           
+                        //     "img-4 img-4 img-6 img-6"
+                        //     "img-7 img-7 img-3 img-3"
+                        //     "img-7 img-7 img-1 img-1";           
+                        //    align-content: center;
+                        //    justify-content: center;
+                        //    gap: 20px;
+                                                       
+                    }
+            
+                }
+               
+            }
+
 }
+
+@media (max-width: 950px)  {
+    header{        
+            .navbar{                           
+                .logo-nav {
+                    img{
+                        width: 85px;
+                         margin-left: 35px;  
+                    }
+                }
+                .pow {              
+                    font-size: 25px;   
+                }
+                ul{
+                    gap: 2.5rem;
+                    margin-right: 3.125rem;
+                    margin-left:95px;
+                    li{                
+                        a{
+                            font-size: 1.25rem;
+                        }
+                    }
+                }
+            }
+        }
+
+        .grid-container-index { 
+            @include grid (1fr 1fr 1fr,90px 400px 500px 350px 250px, none, none,"header header header" 
+            "presentacion presentacion presentacion"
+             "contenedor-servicios contenedor-servicios contenedor-servicios"
+            "contenedor-adopciones contenedor-adopciones  contenedor-adopciones"
+             "footer footer footer" ); 
+             
+            .contenedor-servicios {       
+              .contenedor-cards{     
+                  .card{
+                    h3{
+                        padding:10px;
+                      }
+                      width: 270px;
+                       height: 350px;                       
+                      .img-card {
+                          width: 230px;
+                         // padding: 5px 0px 35px 0px;                  
+                        }          
+                   }
+                }                  
+            }
+            .contenedor-adopciones{
+                h3{
+                    padding:10px;
+                  }
+                .items-adopcion{
+                      .item {
+                          .en-adopcion {
+                              width: 12.5rem;
+                              height:12.5rem;
+                              border-radius: 150px ;
+                          }
+                      } 
+                }
+             }
+        }
+        .grid-container-servicios {    
+            @include grid( repeat(3, 1fr),80px 350px 300px auto  250px , none, none,  
+            "header header header "
+            "presentacion-servicios presentacion-servicios presentacion-servicios"
+            "intro-servicios intro-servicios img-servicios"
+            "detalle-servicios detalle-servicios  detalle-servicios "
+            "footer footer footer ");
+                .detalle-servicios {
+                        .card  {
+                          margin-top:20px;
+                          margin-bottom: 20px;
+                          width: 265px; 
+                        }
+                }      
+        }
+}
+
 
 
 
