@@ -7,20 +7,30 @@
                 }
             }
             .pow {               
-                font-size: 30px;                
+                font-size: 25px;                
             }
             ul{              
-                gap: 2.5rem;
-                padding-right: 30px; 
+                gap: 2.5rem;              
+                padding-right: 15px; 
                 margin-left: 60px;
             }
         }
     }
     .parrafo-nosotros {
-        font-size:20px;
+        font-size:18px;
         text-align: left;
-       padding: 0px 30px 25px 35px;
-        line-height: 40px;        
+       // padding: 25px;
+        margin-bottom: 20px;
+        padding: 10px 30px 25px 35px;
+      // padding: 20px 30px 25px 35px;
+        line-height: 35px;        
+    }
+
+    h2 {
+        font-size: 25px;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-bottom: 10px;
     }
 
     .grid-container-index { 
@@ -73,10 +83,13 @@
                  width: 230px;  
 
                  .card-body{
+                    .card-title {
+                      font-size: 25px;
+                    }
                     .card-text{
-                        padding: 15px;
+                        padding: 12px;
                         font-size: 1.25rem;
-                        font-weight: bold;
+                        font-weight:normal;
                     }
                    
                 } 
@@ -87,7 +100,7 @@
 
     .grid-container-servicios { 
         width: 100%;   
-        @include grid( repeat(3, 1fr),80px 450px 350px auto  250px , none, none,  
+        @include grid( repeat(3, 1fr),80px 450px 330px auto  250px , none, none,  
             "header header header "
             "presentacion-servicios presentacion-servicios presentacion-servicios"
             "intro-servicios intro-servicios img-servicios"
@@ -149,11 +162,11 @@
                     }
                 }
                 .pow {              
-                    font-size: 25px;   
+                    font-size: 20px;   
                 }
                 ul{
                     gap: 2.5rem;
-                    margin-right: 3.125rem;
+                    padding-right: 10px;                   // margin-right: 3.125rem;
                     margin-left:95px;
                     li{                
                         a{
@@ -162,6 +175,10 @@
                     }
                 }
             }
+        }
+
+        .parrafo-nosotros {
+            line-height: 25px;   
         }
 
         .grid-container-index { 
@@ -202,7 +219,7 @@
              }
         }
         .grid-container-servicios {    
-            @include grid( repeat(3, 1fr),80px 350px 300px auto  250px , none, none,  
+            @include grid( repeat(3, 1fr),80px 340px 300px auto  250px , none, none,  
             "header header header "
             "presentacion-servicios presentacion-servicios presentacion-servicios"
             "intro-servicios intro-servicios img-servicios"

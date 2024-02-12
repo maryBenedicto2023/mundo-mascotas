@@ -37,13 +37,14 @@
         .card  {
             margin-top:20px;
             margin-bottom: 20px;
-             width: 288px;  
+             width: 300px;  
              .card-body{
                 text-align: center;
                 background-color: #F4DFB6;
                 .card-text{
                     font-weight: bold;
-                    padding: 1.5625rem;
+                    // padding: 1.5625rem;  
+                    padding: 15px 10px 10px 10px;                 
                     font-size: 1.25rem;
                 }
                 div {

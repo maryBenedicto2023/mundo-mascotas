@@ -189,6 +189,11 @@ h3{
 
         .presentacion-nosotros {
             background-image: url("./../assets/dog-cat-prairie.jpg") ;
+                         
+                .textos-presentacion {                                   
+                      margin-right: 20px;
+                  }             
+    
         }
         
         .contenedor-compromiso {                
@@ -308,6 +313,12 @@ h3{
         "intro-planes "
         "detalle-planes "
         "footer ";
+
+        .presentacion-planes {              
+            .textos-presentacion {                                   
+                  margin-right: 20px;
+              }             
+  }
 
         .intro-planes {
             h2{

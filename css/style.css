@@ -13,18 +13,20 @@ h2 {
   font-weight: bold;
   font-size: 2.1875rem;
   text-align: center;
-  padding-top: 40px; }
+  padding-top: 40px;
+  padding-bottom: 20px; }
 
 h3 {
   color: black;
   font-weight: bold;
   font-size: 1.875rem;
   text-align: center;
-  padding: 10px; }
+  padding: 20px; }
 
 .parrafo-nosotros {
   font-size: 25px;
   text-align: left;
+  padding-top: 30px;
   padding-left: 50px;
   padding-right: 50px;
   line-height: 40px; }
@@ -83,10 +85,12 @@ body {
     .grid-container-servicios .detalle-servicios .card {
       margin-top: 20px;
       margin-bottom: 20px;
-      width: 320px; }
+      width: 370px; }
       .grid-container-servicios .detalle-servicios .card .card-body {
         text-align: center;
         background-color: #F4DFB6; }
+        .grid-container-servicios .detalle-servicios .card .card-body .card-text {
+          font-size: 20px; }
 
 .grid-container-planes {
   display: grid;
@@ -130,13 +134,13 @@ body {
     .grid-container-planes .detalle-planes .card {
       margin-top: 20px;
       margin-bottom: 20px;
-      width: 288px; }
+      width: 300px; }
       .grid-container-planes .detalle-planes .card .card-body {
         text-align: center;
         background-color: #F4DFB6; }
         .grid-container-planes .detalle-planes .card .card-body .card-text {
           font-weight: bold;
-          padding: 1.5625rem;
+          padding: 15px 10px 10px 10px;
           font-size: 1.25rem; }
         .grid-container-planes .detalle-planes .card .card-body div .img-star {
           width: 40px;
@@ -145,7 +149,7 @@ body {
 .grid-container-index {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 90px 450px 600px 450px 250px;
+  grid-template-rows: 90px 450px 550px 420px 250px;
   justify-content: none;
   align-content: none;
   grid-template-areas: "header header header" "presentacion presentacion presentacion" "contenedor-servicios contenedor-servicios contenedor-servicios" "contenedor-adopciones contenedor-adopciones  contenedor-adopciones" "footer footer footer"; }
@@ -428,16 +432,22 @@ footer {
   header .navbar .logo-nav img {
     margin-left: 40px; }
   header .navbar .pow {
-    font-size: 30px; }
+    font-size: 25px; }
   header .navbar ul {
     gap: 2.5rem;
-    padding-right: 30px;
+    padding-right: 15px;
     margin-left: 60px; }
   .parrafo-nosotros {
-    font-size: 20px;
+    font-size: 18px;
     text-align: left;
-    padding: 0px 30px 25px 35px;
-    line-height: 40px; }
+    margin-bottom: 20px;
+    padding: 10px 30px 25px 35px;
+    line-height: 35px; }
+  h2 {
+    font-size: 25px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 10px; }
   .grid-container-index {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -468,15 +478,17 @@ footer {
     margin-top: 15px;
     margin-bottom: 15px;
     width: 230px; }
+    .grid-container-planes .detalle-planes .card .card-body .card-title {
+      font-size: 25px; }
     .grid-container-planes .detalle-planes .card .card-body .card-text {
-      padding: 15px;
+      padding: 12px;
       font-size: 1.25rem;
-      font-weight: bold; }
+      font-weight: normal; }
   .grid-container-servicios {
     width: 100%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 80px 450px 350px auto 250px;
+    grid-template-rows: 80px 450px 330px auto 250px;
     justify-content: none;
     align-content: none;
     grid-template-areas: "header header header " "presentacion-servicios presentacion-servicios presentacion-servicios" "intro-servicios intro-servicios img-servicios" "detalle-servicios detalle-servicios  detalle-servicios " "footer footer footer "; }
@@ -505,13 +517,15 @@ footer {
     width: 85px;
     margin-left: 35px; }
   header .navbar .pow {
-    font-size: 25px; }
+    font-size: 20px; }
   header .navbar ul {
     gap: 2.5rem;
-    margin-right: 3.125rem;
+    padding-right: 10px;
     margin-left: 95px; }
     header .navbar ul li a {
       font-size: 1.25rem; }
+  .parrafo-nosotros {
+    line-height: 25px; }
   .grid-container-index {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -535,7 +549,7 @@ footer {
   .grid-container-servicios {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 80px 350px 300px auto 250px;
+    grid-template-rows: 80px 340px 300px auto 250px;
     justify-content: none;
     align-content: none;
     grid-template-areas: "header header header " "presentacion-servicios presentacion-servicios presentacion-servicios" "intro-servicios intro-servicios img-servicios" "detalle-servicios detalle-servicios  detalle-servicios " "footer footer footer "; }
@@ -938,6 +952,8 @@ footer {
     grid-template-areas: "header  " "presentacion-nosotros" "contenedor-compromiso" "contenedor-equipo"        "footer "; }
     .grid-container-nosotros .presentacion-nosotros {
       background-image: url("./../assets/dog-cat-prairie.jpg"); }
+      .grid-container-nosotros .presentacion-nosotros .textos-presentacion {
+        margin-right: 20px; }
     .grid-container-nosotros .contenedor-compromiso .compromiso {
       display: flex;
       flex-direction: column;
@@ -1002,6 +1018,8 @@ footer {
     /* grid-template-rows: 20px 200px 300px 300px 40px ; */
     grid-template-rows: auto 200px auto auto auto;
     grid-template-areas: "header  " "presentacion-planes " "intro-planes " "detalle-planes " "footer "; }
+    .grid-container-planes .presentacion-planes .textos-presentacion {
+      margin-right: 20px; }
     .grid-container-planes .intro-planes h2 {
       font-size: 25px;
       padding-left: 1.875rem;
@@ -1081,6 +1099,8 @@ footer {
         width: 12.5rem;
         height: 12.5rem;
         border-radius: 150px; }
+  .grid-container-nosotros .presentacion-nosotros .textos-presentacion {
+    margin-right: 10px; }
   .grid-container-nosotros .contenedor-compromiso .compromiso .parrafo-nosotros {
     font-size: 15px;
     padding-bottom: 0rem; }
