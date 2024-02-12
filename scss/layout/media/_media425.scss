@@ -66,17 +66,12 @@ header {
     .bloque-redes {    
         padding: 15px;
         margin-bottom: 20px; 
-        // .seguinos { 
-        //     display: ;                  
-        //         font-size: 25px;
-        // } 
         .redes{
             @include flex(row,space-evenly,center, none); 
             justify-items: center;   
                 .item-redes{
                    width: 50px;
                    height: 50px;
-                  // padding: 10px;
                  }         
             }
                
@@ -99,14 +94,13 @@ h3{
 .parrafo-nosotros {
     font-size: 20px;
     text-align:center;
-    padding: 15px;
-    line-height: 1.25rem;       
+    padding: 30px;
+    line-height:30px;;       
 }
  .grid-container-index {
     width: 100%;
     display: grid;
     grid-template-columns: 100%;
-    /* grid-template-rows: 20px 200px 300px 300px 40px ; */
     grid-template-rows: auto 220px auto auto auto ;
     grid-template-areas:
         "header  "
@@ -120,7 +114,7 @@ h3{
                  padding-right: 20px;
                 margin-right:0px;
                 .parrafo-presentacion{
-                    font-size: .625rem;
+                    font-size: 15px;
                 }
             }
         }
@@ -178,7 +172,6 @@ h3{
     width: 100%;
     display: grid;
     grid-template-columns: 100%;
-    /* grid-template-rows: 20px 200px 300px 300px 40px ; */
     grid-template-rows: auto 200px auto auto auto ;
     grid-template-areas:
         "header  "
@@ -232,7 +225,7 @@ h3{
     width: 100%;
     display: grid;
     grid-template-columns: 100%;    
-    grid-template-rows: auto 230px auto auto auto ;
+    grid-template-rows: auto 220px auto auto auto ;
     grid-template-areas:
         "header  "
         "presentacion-servicios "
@@ -246,19 +239,31 @@ h3{
                      }             
          }
 
+
         .detalle-servicios {
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;           
-            display: flex;
-              .card{
-                margin-top:20px;
-                margin-bottom: 20px;
-                width: 350px; 
-                .card-body {
-                    h3{
-                        text-align: center;
-                    }
+          display: flex;
+          width: 100%;
+          flex-direction: column;
+          align-items:center;
+          align-content: center;
+          justify-content: center;
+          justify-items: center;           
+              .card{ 
+                 width: 350px;
+                 height: 750px;  
+                .card-text {
+                    font-size:25px;
+                    font-weight: normal;
+                    padding-bottom: 20px;
+                    line-height: 30px;
+                }
+                .btn-servicios{
+                    width: 140px;
+                    height: 60px;
+                }
+                .card-img-top{
+                    width: 300px;
+                    height:200px;
                 }
               }
         }
@@ -268,7 +273,6 @@ h3{
     width: 100%;
     display: grid;
     grid-template-columns: 100%;
-    /* grid-template-rows: 20px 200px 300px 300px 40px ; */
     grid-template-rows: auto 200px auto auto auto ;
     grid-template-areas:
         "header  "
@@ -305,7 +309,6 @@ h3{
     width: 100%;
     display: grid;
     grid-template-columns: 100%;
-    /* grid-template-rows: 20px 200px 300px 300px 40px ; */
     grid-template-rows: auto 200px auto auto auto ;
     grid-template-areas:
         "header  "

@@ -19,10 +19,8 @@
     .parrafo-nosotros {
         font-size:18px;
         text-align: left;
-       // padding: 25px;
         margin-bottom: 20px;
         padding: 10px 30px 25px 35px;
-      // padding: 20px 30px 25px 35px;
         line-height: 35px;        
     }
 
@@ -61,8 +59,7 @@
                      padding: .625rem;
                    }                     
                   .img-card {
-                      width: 280px;
-                     // padding: 5px 0px 35px 0px;                  
+                      width: 280px;               
                     }          
                }
             }                  
@@ -100,7 +97,7 @@
 
     .grid-container-servicios { 
         width: 100%;   
-        @include grid( repeat(3, 1fr),80px 450px 330px auto  250px , none, none,  
+        @include grid( repeat(3, 1fr),80px 400px 330px auto  250px , none, none,  
             "header header header "
             "presentacion-servicios presentacion-servicios presentacion-servicios"
             "intro-servicios intro-servicios img-servicios"
@@ -110,7 +107,16 @@
                 .card  {
                   margin-top:20px;
                   margin-bottom: 20px;
-                  width: 290px; 
+                  width: 300px; 
+
+                  .btn-servicios {
+                    width: 130px;
+                    height: 50px;
+                    a {                        
+                        font-size: 22px;
+                        font-weight: bold;
+                    }  
+                  }
                 }
         }  
 
@@ -133,17 +139,7 @@
                         padding-left: 10px;
                         padding-right: 10px;
                         width: 100%;
-                        // display: grid;
-                        // grid-template-columns: repeat(4, 15%);
-                        // grid-template-rows: repeat(3, 300px);
-                        // grid-template-areas:           
-                        //     "img-4 img-4 img-6 img-6"
-                        //     "img-7 img-7 img-3 img-3"
-                        //     "img-7 img-7 img-1 img-1";           
-                        //    align-content: center;
-                        //    justify-content: center;
-                        //    gap: 20px;
-                                                       
+                                    
                     }
             
                 }
@@ -166,7 +162,7 @@
                 }
                 ul{
                     gap: 2.5rem;
-                    padding-right: 10px;                   // margin-right: 3.125rem;
+                    padding-right: 10px;                   
                     margin-left:95px;
                     li{                
                         a{
@@ -197,8 +193,7 @@
                       width: 270px;
                        height: 350px;                       
                       .img-card {
-                          width: 230px;
-                         // padding: 5px 0px 35px 0px;                  
+                          width: 230px;          
                         }          
                    }
                 }                  
@@ -229,7 +224,15 @@
                         .card  {
                           margin-top:20px;
                           margin-bottom: 20px;
-                          width: 265px; 
+                          width: 260px;                           
+                              .card-title {
+                                font-size: 25px;                                
+                              }
+                              .card-text {
+                                font-weight: normal;
+                                font-size: 18px;
+                              }
+                          
                         }
                 }      
         }

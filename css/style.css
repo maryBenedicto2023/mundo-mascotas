@@ -26,7 +26,7 @@ h3 {
 .parrafo-nosotros {
   font-size: 25px;
   text-align: left;
-  padding-top: 30px;
+  padding-top: 10px;
   padding-left: 50px;
   padding-right: 50px;
   line-height: 40px; }
@@ -38,7 +38,7 @@ body {
 .grid-container-servicios {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 80px 450px 400px 700px 250px;
+  grid-template-rows: 80px 400px 400px 780px 250px;
   justify-content: none;
   align-content: none;
   grid-template-areas: "header header header " "presentacion-servicios presentacion-servicios presentacion-servicios" "intro-servicios intro-servicios img-servicios" "detalle-servicios detalle-servicios  detalle-servicios " "footer footer footer "; }
@@ -83,14 +83,21 @@ body {
     flex-direction: row;
     justify-content: space-evenly; }
     .grid-container-servicios .detalle-servicios .card {
-      margin-top: 20px;
-      margin-bottom: 20px;
-      width: 370px; }
-      .grid-container-servicios .detalle-servicios .card .card-body {
-        text-align: center;
-        background-color: #F4DFB6; }
-        .grid-container-servicios .detalle-servicios .card .card-body .card-text {
-          font-size: 20px; }
+      margin-top: 30px;
+      width: 380px;
+      height: 720px;
+      border: 2px solid white;
+      border-radius: 1.25rem;
+      text-align: center;
+      background-color: #F4DFB6; }
+      .grid-container-servicios .detalle-servicios .card .card-text {
+        font-size: 20px;
+        padding: 25px;
+        font-weight: bold;
+        line-height: 30px; }
+      .grid-container-servicios .detalle-servicios .card .card-img-top {
+        width: 90%;
+        align-self: center; }
 
 .grid-container-planes {
   display: grid;
@@ -149,7 +156,7 @@ body {
 .grid-container-index {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 90px 450px 550px 420px 250px;
+  grid-template-rows: 80px 450px 550px 420px 250px;
   justify-content: none;
   align-content: none;
   grid-template-areas: "header header header" "presentacion presentacion presentacion" "contenedor-servicios contenedor-servicios contenedor-servicios" "contenedor-adopciones contenedor-adopciones  contenedor-adopciones" "footer footer footer"; }
@@ -419,13 +426,14 @@ footer {
 
 .btn-servicios {
   border-radius: 1.25rem;
-  width: 120px;
-  height: 50px;
-  background-color: #F3B664; }
+  width: 140px;
+  height: 60px;
+  background-color: #F3B664;
+  align-self: center; }
   .btn-servicios a {
     text-decoration: none;
     color: black;
-    font-size: 20px;
+    font-size: 25px;
     font-weight: bold; }
 
 @media (max-width: 1024px) {
@@ -488,14 +496,20 @@ footer {
     width: 100%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 80px 450px 330px auto 250px;
+    grid-template-rows: 80px 400px 330px auto 250px;
     justify-content: none;
     align-content: none;
     grid-template-areas: "header header header " "presentacion-servicios presentacion-servicios presentacion-servicios" "intro-servicios intro-servicios img-servicios" "detalle-servicios detalle-servicios  detalle-servicios " "footer footer footer "; }
     .grid-container-servicios .detalle-servicios .card {
       margin-top: 20px;
       margin-bottom: 20px;
-      width: 290px; }
+      width: 300px; }
+      .grid-container-servicios .detalle-servicios .card .btn-servicios {
+        width: 130px;
+        height: 50px; }
+        .grid-container-servicios .detalle-servicios .card .btn-servicios a {
+          font-size: 22px;
+          font-weight: bold; }
   .grid-container-nosotros {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -556,7 +570,12 @@ footer {
     .grid-container-servicios .detalle-servicios .card {
       margin-top: 20px;
       margin-bottom: 20px;
-      width: 265px; } }
+      width: 260px; }
+      .grid-container-servicios .detalle-servicios .card .card-title {
+        font-size: 25px; }
+      .grid-container-servicios .detalle-servicios .card .card-text {
+        font-weight: normal;
+        font-size: 18px; } }
 
 @media (max-width: 820px) {
   h1 {
@@ -572,79 +591,18 @@ footer {
     padding-right: 40px;
     line-height: 35px; }
   .grid-container-index {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 90px 450px 600px 450px 250px;
-    justify-content: none;
-    align-content: none;
-    grid-template-areas: "header header header" "presentacion presentacion presentacion" "contenedor-servicios contenedor-servicios contenedor-servicios" "contenedor-adopciones contenedor-adopciones  contenedor-adopciones" "footer footer footer"; }
-    .grid-container-index .presentacion {
-      grid-area: presentacion;
-      background-image: url("./../assets/cocker.jpg");
-      background-size: cover;
-      background-repeat: no-repeat;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: end;
-      gap: none; }
-      .grid-container-index .presentacion .textos-presentacion {
-        display: flex;
-        flex-direction: column;
-        align-items: left;
-        justify-content: right;
-        margin-right: 80px; }
-        .grid-container-index .presentacion .textos-presentacion .parrafo-presentacion {
-          font-size: 1.875rem; }
-    .grid-container-index .contenedor-servicios {
-      grid-area: contenedor-servicios;
-      background-color: #F3B664; }
-      .grid-container-index .contenedor-servicios .contenedor-cards {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        align-items: none;
-        gap: none; }
-        .grid-container-index .contenedor-servicios .contenedor-cards .card {
-          width: 350px;
-          height: 400px;
-          background-color: #F4DFB6;
-          text-align: center;
-          border: 1px solid rgba(0, 0, 0, 0.278);
-          border-radius: 1.25rem;
-          overflow: hidden;
-          display: flex;
-          flex-direction: column;
-          justify-content: none;
-          align-items: center;
-          gap: none; }
-          .grid-container-index .contenedor-servicios .contenedor-cards .card .img-card {
-            width: 300px;
-            padding: 5px 0px 35px 0px; }
-          .grid-container-index .contenedor-servicios .contenedor-cards .card .btn-servicios a {
-            font-size: 20px; }
-    .grid-container-index .contenedor-adopciones {
-      grid-area: contenedor-adopciones;
-      background-color: #F4DFB6; }
-      .grid-container-index .contenedor-adopciones .items-adopcion {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        align-items: center;
-        gap: none; }
-        .grid-container-index .contenedor-adopciones .items-adopcion .item .en-adopcion {
-          width: 15.625rem;
-          height: 15.625rem;
-          border-radius: 150px; }
-  .grid-container-servicios .presentacion-servicios {
-    background-image: url("./../assets/perro-servicios.jpg"); }
-  .grid-container-index {
-    grid-template-rows: 90px 350px 450px 300px 250px; }
+    grid-template-rows: 90px 350px auto auto 250px; }
+    .grid-container-index .presentacion .textos-presentacion {
+      align-items: center;
+      justify-content: right;
+      margin-right: 40px; }
+      .grid-container-index .presentacion .textos-presentacion .parrafo-presentacion {
+        font-size: 22px; }
     .grid-container-index .contenedor-servicios .contenedor-cards {
-      padding-bottom: 5px; }
+      padding-bottom: 25px; }
       .grid-container-index .contenedor-servicios .contenedor-cards .card {
         width: 220px;
-        height: 320px; }
+        height: 300px; }
         .grid-container-index .contenedor-servicios .contenedor-cards .card .img-card {
           width: 190px;
           padding: 5px 0px 35px 0px; }
@@ -654,6 +612,36 @@ footer {
       border-radius: 150px; }
     .grid-container-index .contenedor-adopciones .items-adopcion .item .btn-ver-mas .btn-adopciones {
       align-self: center; }
+  .grid-container-servicios {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: 70px 290px auto auto  auto;
+    grid-template-areas: "header header  " "presentacion-servicios presentacion-servicios " "intro-servicios img-servicios" "detalle-servicios detalle-servicios  " "footer footer "; }
+    .grid-container-servicios .detalle-servicios {
+      display: grid;
+      grid-template-columns: repeat(2, 50%);
+      grid-template-rows: repeat(2, 50%);
+      grid-template-areas: "peluqueria   paseadores  "  "veterinaria  veterinaria "; }
+      .grid-container-servicios .detalle-servicios .card {
+        width: 340px;
+        height: 600px;
+        padding-bottom: 50px; }
+        .grid-container-servicios .detalle-servicios .card .card-text {
+          font-size: 18px;
+          padding: 30px 30px 10px 30px; }
+        .grid-container-servicios .detalle-servicios .card .card-img-top {
+          width: 250px;
+          height: 180px; }
+        .grid-container-servicios .detalle-servicios .card:first-child {
+          grid-area: peluqueria;
+          justify-self: center; }
+        .grid-container-servicios .detalle-servicios .card:nth-child(2) {
+          grid-area: paseadores;
+          justify-self: center; }
+        .grid-container-servicios .detalle-servicios .card:last-child {
+          grid-area: veterinaria;
+          margin-top: 30px;
+          justify-self: center; }
   .grid-container-nosotros {
     display: grid;
     grid-template-columns: repeat(2, 50%);
@@ -800,6 +788,39 @@ footer {
       height: 200px;
       padding-right: 20px;
       padding-bottom: 25px; }
+  .grid-container-servicios {
+    grid-template-rows: 70px 290px auto auto  auto; }
+    .grid-container-servicios .detalle-servicios {
+      display: grid;
+      grid-template-columns: repeat(2, 50%);
+      grid-template-rows: repeat(2, 50%);
+      grid-template-areas: "peluqueria   paseadores "                     "veterinaria  veterinaria "; }
+      .grid-container-servicios .detalle-servicios .card {
+        width: 240px;
+        height: 520px;
+        padding-bottom: 50px; }
+        .grid-container-servicios .detalle-servicios .card .card-text {
+          font-size: 14px;
+          padding: 30px 30px 10px 30px;
+          line-height: 20px; }
+        .grid-container-servicios .detalle-servicios .card .card-img-top {
+          width: 160px;
+          height: 105px; }
+        .grid-container-servicios .detalle-servicios .card .btn-servicios {
+          width: 100px;
+          height: 70px; }
+          .grid-container-servicios .detalle-servicios .card .btn-servicios a {
+            font-size: 15px; }
+        .grid-container-servicios .detalle-servicios .card:first-child {
+          grid-area: peluqueria;
+          justify-self: center; }
+        .grid-container-servicios .detalle-servicios .card:nth-child(2) {
+          grid-area: paseadores;
+          justify-self: center; }
+        .grid-container-servicios .detalle-servicios .card:last-child {
+          grid-area: veterinaria;
+          margin-top: 30px;
+          justify-self: center; }
   footer .brand-footer .pow {
     display: none; }
   footer .bloque-info-contacto .info-contacto {
@@ -897,20 +918,19 @@ footer {
   .parrafo-nosotros {
     font-size: 20px;
     text-align: center;
-    padding: 15px;
-    line-height: 1.25rem; }
+    padding: 30px;
+    line-height: 30px; }
   .grid-container-index {
     width: 100%;
     display: grid;
     grid-template-columns: 100%;
-    /* grid-template-rows: 20px 200px 300px 300px 40px ; */
     grid-template-rows: auto 220px auto auto auto;
     grid-template-areas: "header  " "presentacion" "contenedor-servicios" "contenedor-adopciones "        "footer "; }
     .grid-container-index .presentacion .textos-presentacion {
       padding-right: 20px;
       margin-right: 0px; }
       .grid-container-index .presentacion .textos-presentacion .parrafo-presentacion {
-        font-size: .625rem; }
+        font-size: 15px; }
     .grid-container-index .contenedor-servicios .contenedor-cards {
       display: flex;
       width: 100%;
@@ -947,7 +967,6 @@ footer {
     width: 100%;
     display: grid;
     grid-template-columns: 100%;
-    /* grid-template-rows: 20px 200px 300px 300px 40px ; */
     grid-template-rows: auto 200px auto auto auto;
     grid-template-areas: "header  " "presentacion-nosotros" "contenedor-compromiso" "contenedor-equipo"        "footer "; }
     .grid-container-nosotros .presentacion-nosotros {
@@ -979,26 +998,36 @@ footer {
     width: 100%;
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: auto 230px auto auto auto;
+    grid-template-rows: auto 220px auto auto auto;
     grid-template-areas: "header  " "presentacion-servicios " "intro-servicios " "detalle-servicios " "footer "; }
     .grid-container-servicios .presentacion-servicios .textos-presentacion {
       margin-right: 40px; }
     .grid-container-servicios .detalle-servicios {
+      display: flex;
+      width: 100%;
       flex-direction: column;
-      justify-content: center;
       align-items: center;
-      display: flex; }
+      align-content: center;
+      justify-content: center;
+      justify-items: center; }
       .grid-container-servicios .detalle-servicios .card {
-        margin-top: 20px;
-        margin-bottom: 20px;
-        width: 350px; }
-        .grid-container-servicios .detalle-servicios .card .card-body h3 {
-          text-align: center; }
+        width: 350px;
+        height: 750px; }
+        .grid-container-servicios .detalle-servicios .card .card-text {
+          font-size: 25px;
+          font-weight: normal;
+          padding-bottom: 20px;
+          line-height: 30px; }
+        .grid-container-servicios .detalle-servicios .card .btn-servicios {
+          width: 140px;
+          height: 60px; }
+        .grid-container-servicios .detalle-servicios .card .card-img-top {
+          width: 300px;
+          height: 200px; }
   .grid-container-adopciones {
     width: 100%;
     display: grid;
     grid-template-columns: 100%;
-    /* grid-template-rows: 20px 200px 300px 300px 40px ; */
     grid-template-rows: auto 200px auto auto auto;
     grid-template-areas: "header  " "presentacion-adopciones " "adopciones-ofrecidas "        "footer "; }
     .grid-container-adopciones .presentacion-adopciones .textos-presentacion {
@@ -1015,7 +1044,6 @@ footer {
     width: 100%;
     display: grid;
     grid-template-columns: 100%;
-    /* grid-template-rows: 20px 200px 300px 300px 40px ; */
     grid-template-rows: auto 200px auto auto auto;
     grid-template-areas: "header  " "presentacion-planes " "intro-planes " "detalle-planes " "footer "; }
     .grid-container-planes .presentacion-planes .textos-presentacion {
@@ -1040,6 +1068,27 @@ footer {
     .grid-container-planes .img-planes {
       display: none; } }
 
+@media (max-width: 375px) {
+  .grid-container-index .presentacion .textos-presentacion {
+    padding-right: 15px;
+    margin-right: 0px; }
+    .grid-container-index .presentacion .textos-presentacion .parrafo-presentacion {
+      font-size: 12px; }
+  .grid-container-servicios .detalle-servicios .card {
+    width: 300px;
+    height: 660px; }
+    .grid-container-servicios .detalle-servicios .card .card-text {
+      font-size: 18px;
+      font-weight: normal;
+      padding: 10px; }
+    .grid-container-servicios .detalle-servicios .card .btn-servicios {
+      width: 140px;
+      height: 50px;
+      margin-bottom: 10px; }
+    .grid-container-servicios .detalle-servicios .card .card-img-top {
+      width: 250px;
+      height: 200px; } }
+
 @media (max-width: 320px) {
   header .navbar .pow {
     font-size: 25px; }
@@ -1050,13 +1099,16 @@ footer {
   h1 {
     font-size: 18px; }
   h2 {
-    /* font-weight: bold; */
     font-size: 25px;
     text-align: center;
     padding: 20px 20px 0px 20px; }
   h3 {
     font-size: 25px;
     text-align: center; }
+  .parrafo-nosotros {
+    font-size: .9375rem;
+    padding-left: 25px;
+    padding-right: 1.5625rem; }
   footer {
     flex-direction: column;
     justify-content: center; }
@@ -1077,13 +1129,14 @@ footer {
     width: 100%;
     display: grid;
     grid-template-columns: 100%;
-    /* grid-template-rows: 20px 200px 300px 300px 40px ; */
     grid-template-rows: auto 220px auto auto auto;
     grid-template-areas: "header  " "presentacion" "contenedor-servicios" "contenedor-adopciones "        "footer "; }
     .grid-container-index .presentacion .textos-presentacion {
-      justify-items: center;
       padding-right: 10px;
       padding-left: 18px; }
+      .grid-container-index .presentacion .textos-presentacion .parrafo-presentacion {
+        font-size: 10px;
+        font-weight: bold; }
     .grid-container-index .contenedor-servicios .contenedor-cards .card {
       width: 250px;
       height: 320px;
@@ -1130,22 +1183,22 @@ footer {
       padding: 1.5625rem;
       font-size: .9375rem; }
   .grid-container-servicios .presentacion-servicios .textos-presentacion {
-    margin-right: 10px; }
+    margin-right: 20px; }
   .grid-container-servicios .intro-servicios h2 {
     font-size: 1.25rem; }
-  .grid-container-servicios .intro-servicios .parrafo-nosotros {
-    font-size: .9375rem;
-    padding-left: 25px;
-    padding-right: 1.5625rem; }
   .grid-container-servicios .detalle-servicios .card {
     margin-top: 10px;
     margin-bottom: 10px;
-    width: 230px; }
-    .grid-container-servicios .detalle-servicios .card .card-body .card-title {
+    width: 240px;
+    height: 650px; }
+    .grid-container-servicios .detalle-servicios .card .card-title {
       font-size: 1.25rem; }
-    .grid-container-servicios .detalle-servicios .card .card-body .card-text {
+    .grid-container-servicios .detalle-servicios .card .card-text {
       font-weight: normal;
-      padding: 1.25rem;
-      font-size: .9375rem; }
+      padding: 15px 15px 5px 15px;
+      font-size: 18px; }
+    .grid-container-servicios .detalle-servicios .card .card-img-top {
+      width: 200px;
+      height: 150px; }
   .grid-container-adopciones .presentacion-adopciones .textos-presentacion {
     margin-right: 5px; } }

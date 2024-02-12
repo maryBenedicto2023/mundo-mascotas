@@ -1,4 +1,41 @@
 @media (max-width: 375px)  {
-   
+    .grid-container-index {
+            .presentacion {            
+                .textos-presentacion{
+                     padding-right: 15px;
+                    margin-right:0px;
+                    .parrafo-presentacion{
+                        font-size: 12px;
+                    }
+                }
+            }
+          
+             
+    }
+    .grid-container-servicios {
+    
+            .detalle-servicios {
+                  .card{ 
+                     width: 300px;
+                     height: 660px;  
+                    .card-text {
+                        font-size:18px;
+                        font-weight: normal;
+                        padding: 10px;
+                    }
+                    .btn-servicios{
+                        width: 140px;
+                        height: 50px;
+                        margin-bottom: 10px;
+                    }
+                    .card-img-top{
+                        width: 250px;
+                        height:200px;
+                    }
+                  }
+            }
+    }
+    
+    
        
 }
