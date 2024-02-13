@@ -3,11 +3,11 @@
          font-size: 30px;
     }
     h2 {
-     font-size: 25px;
+     font-size: 20px;
     }
-    h3{
-        font-size: 20px;
-    }
+    // h3{
+    //     font-size: 15px;
+    // }
     .parrafo-nosotros {
         font-size: 15px;
         text-align: left;
@@ -16,74 +16,22 @@
         line-height: 35px;        
     }
 
-    // .grid-container-index { 
-    //     grid-template-rows:90px 350px 450px 270px 250px;
-    //     .contenedor-servicios {       
-    //       .contenedor-cards{ 
-    //         // padding-left: .9375rem;
-    //         // padding-right: .9375rem;  
-    //          padding-bottom:5px ;       
-    //           .card{
-    //               width: 220px;
-    //                height: 320px;                       
-    //               .img-card {
-    //                   width: 190px;
-    //                   padding: 5px 0px 35px 0px;                  
-    //                 }          
-    //            }
-    //         }                  
-    //     }
-    //     .contenedor-adopciones{            
-    //         .items-adopcion{
-    //         //    @include flex(row,space-evenly,center, none);  
-    //               .item {
-    //                   .en-adopcion {
-    //                       width: 9.375rem;
-    //                       height: 9.375rem;
-    //                       border-radius: 150px ;
-    //                   }
-    //                   .btn-ver-mas{
-    //                     .btn-adopciones {
-    //                         align-self: center;
-    //                     }                        
-    //                   }
-    //               } 
-    //         }
-    //      }
-    // }  
-
-    
     .grid-container-index { 
-        grid-template-rows:90px 350px auto auto 250px;
-    // @include grid (1fr 1fr 1fr,90px 450px 600px 450px 250px, none, none,"header header header" 
-    // "presentacion presentacion presentacion"
-    //  "contenedor-servicios contenedor-servicios contenedor-servicios"
-    // "contenedor-adopciones contenedor-adopciones  contenedor-adopciones"
-    //  "footer footer footer" );  
+        grid-template-rows:90px 350px auto auto 250px; 
     
-          .presentacion{ 
-            //    grid-area: presentacion;            
-            //    background-image: url("./../assets/cocker.jpg") ;  
-            //    background-size:cover;    
-            //    background-repeat: no-repeat;  
-            //    @include flex(column,center,end, none);   
+          .presentacion{  
                .textos-presentacion {
-                // display: flex;
-                // flex-direction: column;
                 align-items: center; 
                 justify-content: right;      
                 margin-right: 40px;
                      .parrafo-presentacion{   
                     font-size: 22px;
-                    //font-weight: bold;    
                     }
             } 
           }
 
           .contenedor-servicios {       
             .contenedor-cards{ 
-              // padding-left: .9375rem;
-              // padding-right: .9375rem;  
                padding-bottom:25px ;       
                 .card{
                     width: 220px;
@@ -95,35 +43,8 @@
                  }
               }                  
           }
-        //   .contenedor-servicios {
-        //         .contenedor-cards{   
-        //             @include flex(row,space-evenly,none,none); 
-        //             .card{
-        //                 width: 350px;
-        //                 height: 400px;                       
-        //                 background-color: map-get($colors, fondoCrema);
-        //                 text-align: center;
-        //                 border: 1px solid rgba(0, 0, 0, 0.278);
-        //                 border-radius: 1.25rem;
-        //                 overflow: hidden; 
-        //                 @include flex(column,none,center, none); 
-        //                 .img-card {
-        //                     width: 300px;
-        //                     padding: 5px 0px 35px 0px;                  
-        //                 }
-        //                 .btn-servicios {                         
-        //                         a {                          
-        //                             font-size: 20px;                           
-        //                         }    
-        //                     }          
-        //             }
-        //         }              
-                    
-        //   }
-
         .contenedor-adopciones{            
-            .items-adopcion{
-            //    @include flex(row,space-evenly,center, none);  
+            .items-adopcion{  
                   .item {
                       .en-adopcion {
                           width: 9.375rem;
@@ -139,28 +60,7 @@
             }
          }
     }  
-        //   .contenedor-adopciones{
-        //       grid-area: contenedor-adopciones;
-        //       background-color: map-get($colors, fondoCrema);  
-        //       .items-adopcion{
-        //          @include flex(row,space-evenly,center, none);  
-        //             .item {
-        //                 .en-adopcion {
-        //                     width: 15.625rem;
-        //                     height: 15.625rem;
-        //                     border-radius: 150px ;
-        //                 }
-        //             } 
-        //       }
-        //    }
-//} 
-   
-//     .grid-container-servicios {
-//         .presentacion-servicios {
-//              background-image: url("./../assets/perro-servicios.jpg") ;
-//          }
-// }
-
+        
     .grid-container-servicios {  //este
         display: grid;
         grid-template-columns: repeat(2, 50%);
@@ -171,17 +71,15 @@
             "intro-servicios img-servicios"
             "detalle-servicios detalle-servicios  "
             "footer footer ";
-    //     grid-template-rows: auto 250px auto 1400px 250px ;
 
         .detalle-servicios {
             display: grid;
             grid-template-columns: repeat(2,50%);
             grid-template-rows:repeat(2,50%);
            grid-template-areas:
-            "peluqueria   paseadores  "
-                    
-             "veterinaria  veterinaria "  ;
-           
+            "peluqueria   paseadores  "                    
+             "veterinaria  veterinaria " ;
+
             .card {
                 width:340px;
                 height:600px; 
@@ -214,6 +112,78 @@
          }  
             
     }
+
+    .grid-container-planes {  //este
+        display: grid;
+        width: 100%;
+        grid-template-columns: repeat(2, 50%);
+        grid-template-rows:70px 290px 350px auto  auto ;
+        grid-template-areas:
+            "header header  "
+            "presentacion-planes presentacion-planes "
+            "intro-planes img-planes"
+            "detalle-planes detalle-planes  "
+            "footer footer ";
+      //     grid-template-rows: auto 250px auto 1400px 250px ;
+       
+        .img-planes {
+              grid-area:img-planes ;
+            img { //src: "./../assets/perro-gato-adopciones.jpg";  
+                width: 110%;
+                height: 100%;
+            }    
+       
+         }
+        .detalle-planes {
+            display: grid;
+            grid-template-columns: repeat(2,50%);
+            grid-template-rows:repeat(2,50%);
+           grid-template-areas:
+            "standard  plata"                    
+             "golden  premium" ;
+           
+            .card {
+                width:320px;
+                padding-bottom: 50px; 
+                .card-text {
+                    font-size: 17px;
+                    padding: 30px 30px 20px 30px;                   
+                } 
+                .card-title {
+                    font-size: 20px;                   
+                }
+                // .btn-servicios {   
+                //     width: 120px;
+                //     height: 50px;
+                //    // margin: 0px;
+                //     a {
+                //         font-size: 20px;
+                //     }    
+                // }
+                  
+             &:first-child {
+            grid-area: standard;           
+                justify-self: center;
+             }
+             &:nth-child(2){
+                grid-area: plata;        
+                justify-self: center;
+             }
+             &:nth-child(3){             
+                grid-area:golden;
+                // margin-top: 30px;         
+               justify-self: center;                 
+             }
+             &:last-child {              
+                grid-area: premium;
+                      
+                justify-self: center;                 
+             }
+          }
+        }  
+            
+    }
+
 
     .grid-container-nosotros {    
         @include grid( repeat(2, 50%),80px 290px auto auto  250px , none, none,  
@@ -294,19 +264,19 @@
 
 @media (max-width: 540px)  {
     h1 {
-        font-size: 25px;
+        font-size: 20px;
+        
    }
    h2 {
-    font-size: 20px;
-   }
-   h3{
-       font-size: 15px;
-   }
+    font-size: 15px;
+    padding-top: 15px;
+    padding-bottom: 0px;
+}
    .parrafo-nosotros {
        font-size: 12px;  
-       padding-top: 20px;   
-       padding-left: 30px;
-       padding-right: 30px;
+       padding-top: 10px;   
+       padding-left: 25px;
+       padding-right: 25px;
        line-height: 20px;        
    }
     header {
@@ -424,6 +394,47 @@
             }
          }
     }  
+
+    .grid-container-planes {  
+        display: grid;
+        width: 100%;
+        grid-template-columns: repeat(2, 50%);
+        grid-template-rows:70px 240px 230px auto  auto ;
+        grid-template-areas:
+            "header header  "
+            "presentacion-planes presentacion-planes "
+            "intro-planes img-planes"
+            "detalle-planes detalle-planes  "
+            "footer footer ";
+       
+        .detalle-planes {
+            .card {
+                width:240px;
+                padding-bottom: 53px; 
+                .card-text {
+                    font-size: 15px;
+                    padding: 20px 20px 10px 20px;                   
+                } 
+                .card-title {
+                     font-size: 20px;
+                     padding: 15px;
+                }
+                .btn-servicios {   
+                    width: 70px;
+                    height: 40px;  
+                    padding: 0px; 
+                    margin: 0px;                    
+                    a {                          
+                        font-size: 15px;                           
+                    }    
+                }
+                   
+           
+          }
+         }  
+            
+    }
+
 
     .grid-container-nosotros {    
         @include grid( repeat(2, 50%),80px 250px auto auto auto , none, none,  

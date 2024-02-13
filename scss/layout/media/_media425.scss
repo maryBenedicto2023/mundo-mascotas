@@ -321,7 +321,7 @@ h3{
             .textos-presentacion {                                   
                   margin-right: 20px;
               }             
-  }
+        }
 
         .intro-planes {
             h2{
@@ -337,17 +337,18 @@ h3{
             
          }   
         .detalle-planes {
+            display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
                .card{
                 width: 320px;
-                margin: 20px;
-                 .card-body {
-                     h3{
-                         text-align: center;
-                     }
-                 }
+               // margin: 20px;
+                //  .card-body {
+                //      h3{
+                //          text-align: center;
+                //      }
+                //  }
                }
              }
 

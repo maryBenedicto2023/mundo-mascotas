@@ -37,14 +37,15 @@
         .card  {
             margin-top:20px;
             margin-bottom: 20px;
-             width: 300px;  
-             .card-body{
-                text-align: center;
-                background-color: #F4DFB6;
+             width: 275px; 
+             height: auto; 
+            // .card-body{
+            text-align: center;
+            background-color: #F4DFB6;
                 .card-text{
                     font-weight: bold;
                     // padding: 1.5625rem;  
-                    padding: 15px 10px 10px 10px;                 
+                    padding: 15px 12px 10px 12px;                 
                     font-size: 1.25rem;
                 }
                 div {
@@ -54,8 +55,14 @@
                     }
 
                 }
+                .btn-servicios {    
+                    border-radius: 1.25rem;
+                    width: 130px;
+                    height: 50px;
+                    margin-bottom: 15px;   
+                }
 
-             } 
+            // } 
          }
         
     }
