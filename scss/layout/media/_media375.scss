@@ -12,8 +12,7 @@
           
              
     }
-    .grid-container-servicios {
-    
+    .grid-container-servicios {    
             .detalle-servicios {
                   .card{ 
                      width: 300px;
@@ -36,6 +35,19 @@
             }
     }
     
-    
+    .grid-container-planes { 
+        
+        .detalle-planes {
+              .card{ 
+                 width: 300px;
+                .card-text {
+                    
+                   
+                }               
+              }
+        }
+}
+
+
        
 }

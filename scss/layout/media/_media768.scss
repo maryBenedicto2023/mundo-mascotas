@@ -13,7 +13,8 @@
         text-align: left;
         padding-left: 40px;
         padding-right: 40px;
-        line-height: 35px;        
+        padding-bottom: 5px;
+        line-height: 30px;        
     }
 
     .grid-container-index { 
@@ -71,7 +72,6 @@
             "intro-servicios img-servicios"
             "detalle-servicios detalle-servicios  "
             "footer footer ";
-
         .detalle-servicios {
             display: grid;
             grid-template-columns: repeat(2,50%);
@@ -406,7 +406,6 @@
             "intro-planes img-planes"
             "detalle-planes detalle-planes  "
             "footer footer ";
-       
         .detalle-planes {
             .card {
                 width:240px;
@@ -472,8 +471,10 @@
     }
 
     .grid-container-servicios {        
-        grid-template-rows:70px 290px auto auto  auto ;
-       
+        grid-template-rows:70px 290px auto auto  auto ;  
+        .presentacion-servicios {
+            background-image: url("./../assets/perro-servicios.jpg") ;           
+           }      
         .detalle-servicios {
             display: grid;
             grid-template-columns: repeat(2,50%);
